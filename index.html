@@ -4,16 +4,26 @@
     <meta charset="utf-8" />
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Metasploit Resource Portal</title>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <!-- Local versions for safety. Pare down the bootstrap.min someday soon -->
-    <link href="stylesheets/darkly.css" rel="stylesheet" type="text/css" relative="true" />
-    <link href="stylesheets/custom.css" rel="stylesheet" type="text/css" relative="true" />
-    <script src="javascripts/jquery.min.js" type="text/javascript" relative="true"></script>
-    <script src="javascripts/bootstrap.min.js" type="text/javascript" relative="true"></script>
-</head>
-<body>
-  <div align="left" style="background-color: white; padding: 5px;">
+    <style id="antiClickjack">body{display:none !important;}</style>
+    <script type="text/javascript">
+  if (self === top) {
+    var antiClickjack = document.getElementById("antiClickjack");
+    antiClickjack.parentNode.removeChild(antiClickjack);
+    } else {
+      top.location = self.location;
+  }
+    </script>
+
+  <title>Metasploit Resource Portal</title>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <!-- Local versions for safety. Pare down the bootstrap.min someday soon -->
+  <link href="stylesheets/darkly.css" rel="stylesheet" type="text/css" relative="true" />
+  <link href="stylesheets/custom.css" rel="stylesheet" type="text/css" relative="true" />
+  <script src="javascripts/jquery.min.js" type="text/javascript" relative="true"></script>
+  <script src="javascripts/bootstrap.min.js" type="text/javascript" relative="true"></script>
+  </head>
+  <body>
+    <div align="left" style="background-color: white; padding: 5px;">
   <img class="logo-r7" src="images/r7-logo.png" />
 </div>
 
@@ -682,6 +692,6 @@
   <img class="logo-r7" src="images/r7-logo.png" />
 </div>
 
-</body>
+  </body>
 </html>
 
