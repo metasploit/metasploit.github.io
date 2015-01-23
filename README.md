@@ -7,4 +7,5 @@ Unlike the rest of the Metasploit GitHub organization, this material ought to be
 
 ## TODO
 
-- [ ] Write a contribution guide
+- [ ] Implement SSL on http://resources.metasploit.com because cleartext
+  is lame.
