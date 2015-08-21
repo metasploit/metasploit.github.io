@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GitStats - git_stats</title>
+    <meta charset='utf-8'>
+    <!-- REQUIRED -->
+    <style> body { padding-top: 60px; }
+    </style>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/superhero/bootstrap.min.css" rel="stylesheet">
+    <script src="assets/jquery.min.js" type='text/javascript'></script>
+    <script src="assets/highstock.js" type='text/javascript'></script>
+
+    <script src="assets/bootstrap/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/scripts.js"></script>
+    <!-- EO REQUIRED -->
+  </head>
+  <body>
+    <!-- NAVBAR-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+              </button> <a class="navbar-brand" href="#">MSF Dashboard Stats</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="https://community.rapid7.com/community/metasploit">Metasploit Community</a></li>
+				<li><a href="index.html">Resource Portal</a></li>
+				<li><a href="https://github.com/rapid7/metasploit-framework">Metasploit on Github</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- NAVBAR END-->
+
+    <!-- BADGE LIST -->
+    <ul class="nav nav-pills" role="tablist">
+      
+  <li role="presentation">
+    <a href="pull_requests.html" >NewPullRequests
+      <span class="badge">8</span>
+    </a>
+  </li>
+  <li role="presentation">
+    <a href="enhancements.html" >NewEnhancements
+      <span class="badge">0</span>
+    </a>
+  </li>
+  <li role="presentation">
+    <a href="open_issues.html" >NewIssues
+      <span class="badge">14</span>
+    </a>
+  </li>
+  <li role="presentation">
+    <a href="features.html" >NewFeatures
+      <span class="badge">2</span>
+    </a>
+  </li>
+  <li role="presentation">
+    <a href="bugs.html" >NewBugs
+      <span class="badge">5</span>
+    </a>
+  </li>
+    </ul>
+    <!-- BADGE LIST END-->
+    <div class='container'>
+      <div class='tabbable tabs-left'>
+        <ul class='nav nav-tabs'>
+          <li>
+            <li><a href="pull_requests.html" >pull_requests</a></li>
+<li><a href="enhancements.html" >enhancements</a></li>
+<li><a href="open_issues.html" >open_issues</a></li>
+<li><a href="features.html" >features</a></li>
+<li><a href="bugs.html" >bugs</a></li>
+
+          </li>
+        </ul>
+        <div class='tab-content'>
+          <div class='tab-pane active'>
+            <div class='page-header'>
+              <h1 class='pagination-centered'>pull_requests by date</h1>
+            </div>
+                    <script type="text/javascript">
+                    (function() {
+                      var onload = window.onload;
+                      window.onload = function(){
+                        if (typeof onload == "function") onload();
+                                var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "pull_requests" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "comments_by_date" },"subtitle": {  },"series": [{ "name": "pull_requests by date","type": "spline","data": [[1438275318000, 57], [1438275332000, 57], [1438375937000, 55], [1438625309000, 55], [1438798141000, 54], [1438798681000, 54], [1438799832000, 54], [1438876315000, 55], [1438964240000, 55], [1438976788000, 55], [1439303865000, 59], [1439328685000, 59], [1439391334000, 60], [1439393335000, 60], [1439498131000, 64], [1439502891000, 65], [1439567339000, 65], [1439648272000, 62], [1439648432000, 62], [1439648496000, 62], [1439650029000, 62], [1439828995000, 61], [1439829315000, 61], [1439829437000, 61], [1439830755000, 61], [1439837818000, 61], [1439837862000, 61], [1439837946000, 61], [1439838166000, 62], [1439838324000, 62], [1439838380000, 62], [1439839247000, 62], [1439839390000, 62], [1439839527000, 62], [1439839652000, 62], [1439839682000, 62], [1439839762000, 62], [1439839990000, 62], [1439841033000, 63], [1439841081000, 63], [1439842362000, 64], [1439842420000, 64], [1439842454000, 64], [1439842580000, 64], [1439843338000, 64], [1439843552000, 64], [1439843814000, 64], [1439843876000, 64], [1439844066000, 64], [1439844161000, 64], [1439844229000, 64], [1439844333000, 64], [1439844434000, 64], [1439844613000, 64], [1439846003000, 64], [1439848184000, 63], [1439866491000, 60], [1439999747000, 60], [1439999782000, 60], [1440001478000, 60], [1440001669000, 60], [1440002085000, 60], [1440002296000, 60], [1440003638000, 58], [1440003760000, 58], [1440008386000, 57], [1440008488000, 57], [1440008582000, 57], [1440008896000, 57], [1440008953000, 57], [1440009046000, 57], [1440009136000, 57], [1440009409000, 57], [1440009510000, 57], [1440011534000, 57], [1440011700000, 57], [1440011947000, 57], [1440012140000, 57], [1440013135000, 57], [1440013248000, 57], [1440013552000, 57], [1440013651000, 57], [1440013836000, 57], [1440104181000, 59], [1440104314000, 59], [1440104348000, 59], [1440104666000, 59], [1440104747000, 59], [1440105483000, 59], [1440106703000, 59], [1440106928000, 59], [1440181233000, 59]] }] };
+
+                    window.chart_comments_by_date = new Highcharts.StockChart(options);
+
+                      };
+                    })()
+                    </script>
+            <div id="comments_by_date"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <table class="table table-striped">
+      <h1>Top Committers</h1>
+      <tr><td>jvazquez-r7</td><td>Brent Cook</td><td>William Vu</td><td>wchen-r7</td><td>Brandon Perry</td><td>Tod Beardsley</td><td>Mo Sadek</td><td>OJ</td><td>aakerblom</td><td>HD Moore</td></tr>
+      <tr><td>jakxx</td><td>Meatballs</td><td>joev</td><td>Greg Mikeska</td><td>Roberto Soares</td><td>Spencer McIntyre</td><td>James Lee</td><td>h00die</td><td>Jack64</td><td>kn0</td></tr>
+      <tr><td>Andrew Smith</td><td>Christian Mehlmauer</td><td>Alex Watt</td><td>g0tmi1k</td><td>Dev Mohanty</td><td>Samuel Huckins</td><td>Christian Sanders</td></tr>
+    </table>
+    
+
+            
+      <div class="panel panel-primary">
+        <div class="panel-heading" data-toggle="collapse"
+             data-parent="#accordion" data-target="#NewPullRequests">
+          <h4 class="panel-title">NewPullRequests</h4>
+        </div>
+        <div id="NewPullRequests" class="panel-collapse collapse">
+        <div class="panel-body">
+          Check out some of the NewPullRequests for this week!
+        </div>
+        <div class="table-responsive">
+        <table class="table">
+      
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/pull/5874">
+                <span class="fa-fw fa fa-github">PR #5874</span>
+              </a>
+              <a title="Consistency and API conformance changes to LES" href="https://github.com/rapid7/metasploit-framework/pull/5874">Consistency and API conformance changes to LES
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-21 17:40:42 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Created by hmoore-r7
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/pull/5872">
+                <span class="fa-fw fa fa-github">PR #5872</span>
+              </a>
+              <a title="Properly pass HTTP version evasion options" href="https://github.com/rapid7/metasploit-framework/pull/5872">Properly pass HTTP version evasion options
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-20 17:15:30 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Created by jhart-r7
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/pull/5868">
+                <span class="fa-fw fa fa-github">PR #5868</span>
+              </a>
+              <a title="Support x64 payloads" href="https://github.com/rapid7/metasploit-framework/pull/5868">Support x64 payloads
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-20 07:19:06 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Created by wchen-r7
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/pull/5867">
+                <span class="fa-fw fa fa-github">PR #5867</span>
+              </a>
+              <a title="Feature PacketStorm Reference Display" href="https://github.com/rapid7/metasploit-framework/pull/5867">Feature PacketStorm Reference Display
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-20 03:51:48 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Created by espreto
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/pull/5865">
+                <span class="fa-fw fa fa-github">PR #5865</span>
+              </a>
+              <a title="Fix x64 exe injection" href="https://github.com/rapid7/metasploit-framework/pull/5865">Fix x64 exe injection
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-19 23:42:39 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Created by jlee-r7
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/pull/5864">
+                <span class="fa-fw fa fa-github">PR #5864</span>
+              </a>
+              <a title="PCMan FTP Server - PUT Command Buffer Overflow" href="https://github.com/rapid7/metasploit-framework/pull/5864">PCMan FTP Server - PUT Command Buffer Overflow
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-19 06:28:25 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Created by shipcod3
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/pull/5855">
+                <span class="fa-fw fa fa-github">PR #5855</span>
+              </a>
+              <a title="Beginnings of the Android Interval collection functionality" href="https://github.com/rapid7/metasploit-framework/pull/5855">Beginnings of the Android Interval collection functionality
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-17 15:10:21 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Created by OJ
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/pull/5851">
+                <span class="fa-fw fa fa-github">PR #5851</span>
+              </a>
+              <a title="Improve meterpreter packet dispatch performance" href="https://github.com/rapid7/metasploit-framework/pull/5851">Improve meterpreter packet dispatch performance
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-15 13:34:26 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Created by joncave
+            </td>
+          </tr>
+    </table></div></div></div>
+      <div class="panel panel-primary">
+        <div class="panel-heading" data-toggle="collapse"
+             data-parent="#accordion" data-target="#NewEnhancements">
+          <h4 class="panel-title">NewEnhancements</h4>
+        </div>
+        <div id="NewEnhancements" class="panel-collapse collapse">
+        <div class="panel-body">
+          Check out some of the NewEnhancements for this week!
+        </div>
+        <div class="table-responsive">
+        <table class="table">
+      </table></div></div></div>
+      <div class="panel panel-primary">
+        <div class="panel-heading" data-toggle="collapse"
+             data-parent="#accordion" data-target="#NewIssues">
+          <h4 class="panel-title">NewIssues</h4>
+        </div>
+        <div id="NewIssues" class="panel-collapse collapse">
+        <div class="panel-body">
+          Check out some of the NewIssues for this week!
+        </div>
+        <div class="table-responsive">
+        <table class="table">
+      
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/pull/5874">
+                <span class="fa-fw fa fa-github">Issue #5874</span>
+              </a>
+              <a title="Consistency and API conformance changes to LES" href="https://github.com/rapid7/metasploit-framework/pull/5874">Consistency and API conformance changes to LES
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-21 17:40:42 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Created by hmoore-r7
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/pull/5872">
+                <span class="fa-fw fa fa-github">Issue #5872</span>
+              </a>
+              <a title="Properly pass HTTP version evasion options" href="https://github.com/rapid7/metasploit-framework/pull/5872">Properly pass HTTP version evasion options
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-20 17:15:30 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Created by jhart-r7
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/5871">
+                <span class="fa-fw fa fa-github">Issue #5871</span>
+              </a>
+              <a title="HTTP version_random_valid and version_random_invalid options not exposed / passed" href="https://github.com/rapid7/metasploit-framework/issues/5871">HTTP version_random_valid and version_random_invalid options not exposed / passed
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-20 16:49:57 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Created by jhart-r7
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/5870">
+                <span class="fa-fw fa fa-github">Issue #5870</span>
+              </a>
+              <a title="TLS 1.2 support for http" href="https://github.com/rapid7/metasploit-framework/issues/5870">TLS 1.2 support for http
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-20 16:27:49 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Created by swtornio
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/pull/5868">
+                <span class="fa-fw fa fa-github">Issue #5868</span>
+              </a>
+              <a title="Support x64 payloads" href="https://github.com/rapid7/metasploit-framework/pull/5868">Support x64 payloads
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-20 07:19:06 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Created by wchen-r7
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/pull/5867">
+                <span class="fa-fw fa fa-github">Issue #5867</span>
+              </a>
+              <a title="Feature PacketStorm Reference Display" href="https://github.com/rapid7/metasploit-framework/pull/5867">Feature PacketStorm Reference Display
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-20 03:51:48 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Created by espreto
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/5866">
+                <span class="fa-fw fa fa-github">Issue #5866</span>
+              </a>
+              <a title="DLL injection always uses x86 assembly" href="https://github.com/rapid7/metasploit-framework/issues/5866">DLL injection always uses x86 assembly
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-19 23:47:40 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Created by jlee-r7
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/pull/5865">
+                <span class="fa-fw fa fa-github">Issue #5865</span>
+              </a>
+              <a title="Fix x64 exe injection" href="https://github.com/rapid7/metasploit-framework/pull/5865">Fix x64 exe injection
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-19 23:42:39 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Created by jlee-r7
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/pull/5864">
+                <span class="fa-fw fa fa-github">Issue #5864</span>
+              </a>
+              <a title="PCMan FTP Server - PUT Command Buffer Overflow" href="https://github.com/rapid7/metasploit-framework/pull/5864">PCMan FTP Server - PUT Command Buffer Overflow
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-19 06:28:25 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Created by shipcod3
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/5863">
+                <span class="fa-fw fa fa-github">Issue #5863</span>
+              </a>
+              <a title="The `ps` command needs reworking" href="https://github.com/rapid7/metasploit-framework/issues/5863">The `ps` command needs reworking
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-19 00:10:26 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Created by OJ
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/pull/5855">
+                <span class="fa-fw fa fa-github">Issue #5855</span>
+              </a>
+              <a title="Beginnings of the Android Interval collection functionality" href="https://github.com/rapid7/metasploit-framework/pull/5855">Beginnings of the Android Interval collection functionality
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-17 15:10:21 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Created by OJ
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/5854">
+                <span class="fa-fw fa fa-github">Issue #5854</span>
+              </a>
+              <a title="auxiliary/scanner/oracle/sid_brute.rb crashes with big dictionaries" href="https://github.com/rapid7/metasploit-framework/issues/5854">auxiliary/scanner/oracle/sid_brute.rb crashes with big dictionaries
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-17 12:34:12 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Created by ewilded
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/5852">
+                <span class="fa-fw fa fa-github">Issue #5852</span>
+              </a>
+              <a title="stdapi/sys/registry calls send_packet instead of send_request" href="https://github.com/rapid7/metasploit-framework/issues/5852">stdapi/sys/registry calls send_packet instead of send_request
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-15 21:17:04 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Created by Meatballs1
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/pull/5851">
+                <span class="fa-fw fa fa-github">Issue #5851</span>
+              </a>
+              <a title="Improve meterpreter packet dispatch performance" href="https://github.com/rapid7/metasploit-framework/pull/5851">Improve meterpreter packet dispatch performance
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-15 13:34:26 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Created by joncave
+            </td>
+          </tr>
+    </table></div></div></div>
+      <div class="panel panel-primary">
+        <div class="panel-heading" data-toggle="collapse"
+             data-parent="#accordion" data-target="#NewFeatures">
+          <h4 class="panel-title">NewFeatures</h4>
+        </div>
+        <div id="NewFeatures" class="panel-collapse collapse">
+        <div class="panel-body">
+          Check out some of the NewFeatures for this week!
+        </div>
+        <div class="table-responsive">
+        <table class="table">
+      
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/pull/5860">
+                <span class="fa-fw fa fa-github">Ticket #5860</span>
+              </a>
+              <a title="Add OSX tpwn module" href="https://github.com/rapid7/metasploit-framework/pull/5860">Add OSX tpwn module
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-17 22:11:24 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Requested by wvu-r7
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/pull/5853">
+                <span class="fa-fw fa fa-github">Ticket #5853</span>
+              </a>
+              <a title="Firefox 35-36 RCE one-click exploit" href="https://github.com/rapid7/metasploit-framework/pull/5853">Firefox 35-36 RCE one-click exploit
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-15 23:03:00 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Requested by joevennix
+            </td>
+          </tr>
+    </table></div></div></div>
+      <div class="panel panel-primary">
+        <div class="panel-heading" data-toggle="collapse"
+             data-parent="#accordion" data-target="#NewBugs">
+          <h4 class="panel-title">NewBugs</h4>
+        </div>
+        <div id="NewBugs" class="panel-collapse collapse">
+        <div class="panel-body">
+          Check out some of the NewBugs for this week!
+        </div>
+        <div class="table-responsive">
+        <table class="table">
+      
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/pull/5874">
+                <span class="fa-fw fa fa-github">Ticket #5874</span>
+              </a>
+              <a title="Consistency and API conformance changes to LES" href="https://github.com/rapid7/metasploit-framework/pull/5874">Consistency and API conformance changes to LES
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-21 17:40:42 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Reported by hmoore-r7
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/5866">
+                <span class="fa-fw fa fa-github">Ticket #5866</span>
+              </a>
+              <a title="DLL injection always uses x86 assembly" href="https://github.com/rapid7/metasploit-framework/issues/5866">DLL injection always uses x86 assembly
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-19 23:47:40 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Reported by jlee-r7
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/pull/5865">
+                <span class="fa-fw fa fa-github">Ticket #5865</span>
+              </a>
+              <a title="Fix x64 exe injection" href="https://github.com/rapid7/metasploit-framework/pull/5865">Fix x64 exe injection
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-19 23:42:39 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Reported by jlee-r7
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/5863">
+                <span class="fa-fw fa fa-github">Ticket #5863</span>
+              </a>
+              <a title="The `ps` command needs reworking" href="https://github.com/rapid7/metasploit-framework/issues/5863">The `ps` command needs reworking
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-19 00:10:26 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Reported by OJ
+            </td>
+          </tr>
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/pull/5851">
+                <span class="fa-fw fa fa-github">Ticket #5851</span>
+              </a>
+              <a title="Improve meterpreter packet dispatch performance" href="https://github.com/rapid7/metasploit-framework/pull/5851">Improve meterpreter packet dispatch performance
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-08-15 13:34:26 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Reported by joncave
+            </td>
+          </tr>
+    </table></div></div></div></div>
+  </body>
+</html>
