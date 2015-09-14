@@ -4,15 +4,15 @@
     <title>GitStats - git_stats</title>
     <meta charset='utf-8'>
     <!-- REQUIRED -->
-    <style> body { padding-top: 60px; }
+    <style>
+      body{
+        padding-top: 60px;
+      }
     </style>
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/superhero/bootstrap.min.css" rel="stylesheet">
-    <script src="assets/jquery.min.js" type='text/javascript'></script>
-    <script src="assets/highstock.js" type='text/javascript'></script>
-
     <script src="assets/bootstrap/js/jquery.min.js"></script>
+    <script src="assets/highcharts.js" type='text/javascript'></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/bootstrap/js/scripts.js"></script>
     <!-- EO REQUIRED -->
   </head>
   <body>
@@ -46,7 +46,7 @@
       
   <li role="presentation">
     <a href="pull_requests.html" >NewPullRequests
-      <span class="badge">17</span>
+      <span class="badge">16</span>
     </a>
   </li>
   <li role="presentation">
@@ -66,7 +66,7 @@
   </li>
   <li role="presentation">
     <a href="bugs.html" >NewBugs
-      <span class="badge">3</span>
+      <span class="badge">4</span>
     </a>
   </li>
     </ul>
@@ -88,19 +88,55 @@
             <div class='page-header'>
               <h1 class='pagination-centered'>open_issues by date</h1>
             </div>
-                    <script type="text/javascript">
-                    (function() {
-                      var onload = window.onload;
-                      window.onload = function(){
-                        if (typeof onload == "function") onload();
-                                var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "open_issues" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "comments_by_date" },"subtitle": {  },"series": [{ "name": "open_issues by date","type": "spline","data": [[1438275318000, 161], [1438275332000, 161], [1438375937000, 159], [1438625309000, 159], [1438798141000, 160], [1438798681000, 160], [1438799832000, 160], [1438876315000, 162], [1438964240000, 162], [1438976788000, 162], [1439303865000, 166], [1439328685000, 166], [1439391334000, 166], [1439393335000, 166], [1439498131000, 174], [1439502891000, 174], [1439567339000, 177], [1439648272000, 177], [1439648432000, 177], [1439648496000, 177], [1439650029000, 177], [1439828995000, 179], [1439829315000, 179], [1439829437000, 179], [1439830755000, 179], [1439837818000, 179], [1439837862000, 179], [1439837946000, 179], [1439838166000, 179], [1439838324000, 179], [1439838380000, 179], [1439839247000, 179], [1439839390000, 179], [1439839527000, 179], [1439839652000, 179], [1439839682000, 179], [1439839762000, 179], [1439839990000, 179], [1439841033000, 179], [1439841081000, 179], [1439842362000, 179], [1439842420000, 179], [1439842454000, 179], [1439842580000, 179], [1439843338000, 179], [1439843552000, 179], [1439843814000, 179], [1439843876000, 179], [1439844066000, 179], [1439844161000, 179], [1439844229000, 179], [1439844333000, 179], [1439844434000, 179], [1439844613000, 179], [1439846003000, 179], [1439848184000, 178], [1439866491000, 177], [1439999747000, 177], [1439999782000, 177], [1440001478000, 177], [1440001669000, 177], [1440002085000, 177], [1440002296000, 177], [1440003638000, 177], [1440003760000, 177], [1440008386000, 177], [1440008488000, 177], [1440008582000, 177], [1440008896000, 177], [1440008953000, 177], [1440009046000, 177], [1440009136000, 177], [1440009409000, 177], [1440009510000, 177], [1440011534000, 177], [1440011700000, 177], [1440011947000, 177], [1440012140000, 177], [1440013135000, 177], [1440013248000, 177], [1440013552000, 177], [1440013651000, 177], [1440013836000, 177], [1440104181000, 178], [1440104314000, 178], [1440104348000, 178], [1440104666000, 178], [1440104747000, 178], [1440105483000, 178], [1440106703000, 178], [1440106928000, 178], [1440623075000, 177], [1440623102000, 177], [1440623233000, 177], [1440623269000, 177], [1440623322000, 177], [1441908092000, 170]] }] };
+            <script type="text/javascript">
+        $(function () {
+            $('#container').highcharts({
+                chart: {
+                    type: 'spline'
+                },
+                title: {
+                    text: 'open_issues'
+                },
+                subtitle: {
+                    text: ''
+                },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: { // don't display the dummy year
+                        month: '%e. %b',
+                        year: '%b'
+                    },
+                    title: {
+                        text: 'Date'
+                    }
+                },
+                yAxis: {
+                    title: {
+                        text: 'open_issues'
+                    },
+                    min: 0
+                },
+                tooltip: {
+                    headerFormat: '<b>{series.name}</b><br>',
+                    pointFormat: '{point.x:%e. %b}: {point.y:.2f} m'
+                },
 
-                    window.chart_comments_by_date = new Highcharts.StockChart(options);
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            enabled: true
+                        }
+                    }
+                },
 
-                      };
-                    })()
-                    </script>
-            <div id="comments_by_date"></div>
+                series: [{
+                    name: "open_issues",
+                    data: [[1438275318000, 161], [1438275332000, 161], [1438375937000, 159], [1438625309000, 159], [1438798141000, 160], [1438798681000, 160], [1438799832000, 160], [1438876315000, 162], [1438964240000, 162], [1438976788000, 162], [1439303865000, 166], [1439328685000, 166], [1439391334000, 166], [1439393335000, 166], [1439498131000, 174], [1439502891000, 174], [1439567339000, 177], [1439648272000, 177], [1439648432000, 177], [1439648496000, 177], [1439650029000, 177], [1439828995000, 179], [1439829315000, 179], [1439829437000, 179], [1439830755000, 179], [1439837818000, 179], [1439837862000, 179], [1439837946000, 179], [1439838166000, 179], [1439838324000, 179], [1439838380000, 179], [1439839247000, 179], [1439839390000, 179], [1439839527000, 179], [1439839652000, 179], [1439839682000, 179], [1439839762000, 179], [1439839990000, 179], [1439841033000, 179], [1439841081000, 179], [1439842362000, 179], [1439842420000, 179], [1439842454000, 179], [1439842580000, 179], [1439843338000, 179], [1439843552000, 179], [1439843814000, 179], [1439843876000, 179], [1439844066000, 179], [1439844161000, 179], [1439844229000, 179], [1439844333000, 179], [1439844434000, 179], [1439844613000, 179], [1439846003000, 179], [1439848184000, 178], [1439866491000, 177], [1439999747000, 177], [1439999782000, 177], [1440001478000, 177], [1440001669000, 177], [1440002085000, 177], [1440002296000, 177], [1440003638000, 177], [1440003760000, 177], [1440008386000, 177], [1440008488000, 177], [1440008582000, 177], [1440008896000, 177], [1440008953000, 177], [1440009046000, 177], [1440009136000, 177], [1440009409000, 177], [1440009510000, 177], [1440011534000, 177], [1440011700000, 177], [1440011947000, 177], [1440012140000, 177], [1440013135000, 177], [1440013248000, 177], [1440013552000, 177], [1440013651000, 177], [1440013836000, 177], [1440104181000, 178], [1440104314000, 178], [1440104348000, 178], [1440104666000, 178], [1440104747000, 178], [1440105483000, 178], [1440106703000, 178], [1440106928000, 178], [1440623075000, 177], [1440623102000, 177], [1440623233000, 177], [1440623269000, 177], [1440623322000, 177], [1441046521000, 174], [1441053731000, 173], [1441910449000, 170], [1441918025000, 171], [1441918330000, 171], [1441918486000, 171]]
+                }]
+            });
+        });
+            </script>
+            <div id="container"></div>
           </div>
         </div>
       </div>
@@ -429,25 +465,6 @@
               Created by crashbrz
             </td>
           </tr>
-    
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/pull/5932">
-                <span class="fa-fw fa fa-github">PR #5932</span>
-              </a>
-              <a title="APK Backdooring script" href="https://github.com/rapid7/metasploit-framework/pull/5932">APK Backdooring script
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>Opened on 2015-09-03 18:30:47 UTC</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              Created by Jack64
-            </td>
-          </tr>
     </table></div></div></div>
       <div class="panel panel-primary">
         <div class="panel-heading" data-toggle="collapse"
@@ -473,6 +490,25 @@
         <div class="table-responsive">
         <table class="table">
       
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/5963">
+                <span class="fa-fw fa fa-github">Issue #5963</span>
+              </a>
+              <a title="post/osx/manage/webcam does not save the snapshot" href="https://github.com/rapid7/metasploit-framework/issues/5963">post/osx/manage/webcam does not save the snapshot
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-09-10 20:41:44 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Created by wchen-r7
+            </td>
+          </tr>
+    
           <tr>
             <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/5962">
@@ -890,25 +926,6 @@
               Created by crashbrz
             </td>
           </tr>
-    
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/pull/5932">
-                <span class="fa-fw fa fa-github">Issue #5932</span>
-              </a>
-              <a title="APK Backdooring script" href="https://github.com/rapid7/metasploit-framework/pull/5932">APK Backdooring script
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>Opened on 2015-09-03 18:30:47 UTC</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              Created by Jack64
-            </td>
-          </tr>
     </table></div></div></div>
       <div class="panel panel-primary">
         <div class="panel-heading" data-toggle="collapse"
@@ -972,6 +989,25 @@
         <div class="table-responsive">
         <table class="table">
       
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/5963">
+                <span class="fa-fw fa fa-github">Ticket #5963</span>
+              </a>
+              <a title="post/osx/manage/webcam does not save the snapshot" href="https://github.com/rapid7/metasploit-framework/issues/5963">post/osx/manage/webcam does not save the snapshot
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>Opened on 2015-09-10 20:41:44 UTC</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Reported by wchen-r7
+            </td>
+          </tr>
+    
           <tr>
             <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/5961">
