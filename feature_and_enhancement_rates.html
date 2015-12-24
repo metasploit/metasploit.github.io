@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Metasploit Stats</title>
+    <meta charset='utf-8'>
+    <!-- REQUIRED -->
+    <style>
+      body{
+        padding-top: 60px;
+      }
+    </style>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/superhero/bootstrap.min.css" rel="stylesheet">
+    <script src="assets/bootstrap/js/jquery.min.js"></script>
+    <script src="assets/highcharts.js" type='text/javascript'></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- EO REQUIRED -->
+  </head>
+  <body>
+    <!-- NAVBAR-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+              </button> <a class="navbar-brand" href="#">Metasploit Stats</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="https://community.rapid7.com/community/metasploit">Metasploit Community</a></li>
+				<li><a href="index.html">Resource Portal</a></li>
+				<li><a href="https://github.com/rapid7/metasploit-framework">Metasploit on Github</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- NAVBAR END-->
+
+    <div class='container'>
+      <div class='tabbable tabs-left'>
+        <ul class='nav nav-pills'>
+          <li>
+            
+  <li role="presentation">
+    <a href="pull_request_rates.html" >Pull Requests per Quarter</a>
+  </li>
+  <li role="presentation">
+    <a href="bug_rates.html" >Bugs per Quarter</a>
+  </li>
+  <li role="presentation">
+    <a href="feature_and_enhancement_rates.html" >Features and Enhancements per Quarter</a>
+  </li>
+  <li role="presentation">
+    <a href="pull_requests.html" >Open Pull Requests
+      <span class="badge">24 since last week</span>
+    </a>
+  </li>
+  <li role="presentation">
+    <a href="features_and_enhancements.html" >Open Features and Enhancements
+      <span class="badge">1 since last week</span>
+    </a>
+  </li>
+  <li role="presentation">
+    <a href="bugs.html" >Open Bugs
+      <span class="badge">2 since last week</span>
+    </a>
+  </li>
+          </li>
+        </ul>
+        <div class='tab-content'>
+          <div class='tab-pane active'>
+            <div class='page-header'>
+              <h1 class='pagination-centered'>Features and Enhancements per Quarter by date</h1>
+            </div>
+            <script type="text/javascript">
+        $(function () {
+            $('#container').highcharts({
+                chart: {
+                    zoomType: 'x'
+                },
+                title: {
+                    text: 'Features and Enhancements per Quarter'
+                },
+                subtitle: {
+                    text: ''
+                },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: { // don't display the dummy year
+                        month: '%e. %b %Y',
+                        year: '%b'
+                    },
+                    title: {
+                        text: 'Date'
+                    }
+                },
+                yAxis: {
+                    title: {
+                        text: 'Features and Enhancements per Quarter'
+                    },
+                    min: 0
+                },
+                tooltip: {
+                    headerFormat: '<b>{series.name}</b><br>',
+                    pointFormat: '{point.x:%e. %b}: {point.y:.2f}'
+                },
+
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            enabled: true
+                        }
+                    }
+                },
+
+                series: [
+				{ name: "Opened Features and Enhancements per Quarter", data: [[1411302467000, 17], [1419164867000, 54], [1427027267000, 38], [1434889667000, 16], [1442752067000, 30], [1450614467000, 27]] },
+				{ name: "Closed Features and Enhancements per Quarter", data: [[1411302467000, 1], [1419164867000, 13], [1427027267000, 20], [1434889667000, 15], [1442752067000, 26], [1450614467000, 11]] },
+				]
+            });
+        });
+            </script>
+            <div id="container"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <table class="table table-striped">
+      <h2>Top committers this last week</h2>
+      <tr><td>wchen-r7 (57)</td><td>Jon Hart (54)</td><td>Brent Cook (48)</td><td>Luke Imhoff (44)</td><td>jvazquez-r7 (32)</td><td>Christian Mehlmauer (31)</td><td>William Vu (24)</td><td>JT (24)</td><td>Greg Mikeska (20)</td><td>Spencer McIntyre (9)</td></tr>
+      <tr><td>Stuart Morgan (8)</td><td>Louis Sato (7)</td><td>Gregory Mikeska (6)</td><td>nixawk (5)</td><td>HD Moore (5)</td><td>Andrew Smith (4)</td><td>Metasploit (4)</td><td>James Lee (4)</td><td>Vex Woo (3)</td><td>Rory McNamara (3)</td></tr>
+      <tr><td>dmohanty-r7 (3)</td><td>OJ (3)</td><td>Bigendian Smalls (3)</td><td>Jon Cave (2)</td><td>Tim (2)</td><td>Tod Beardsley (2)</td><td>BAZIN-HSC (2)</td><td>Kyle Gray (2)</td><td>karllll (1)</td><td>pyllyukko (1)</td></tr>
+    </table>
+    <h2>Top items this last week</h2>
+    
+            
+    <div class="panel panel-primary">
+      <div class="panel-heading" data-toggle="collapse"
+           data-parent="#accordion" data-target="#pull_requests">
+        <h4 class="panel-title">New Open Pull Requests</h4>
+      </div>
+      <div id="pull_requests" class="panel-collapse collapse">
+      <div class="panel-body">
+        Check out some of the new Open Pull Requests for this week!
+      </div>
+      <div class="table-responsive">
+      <table class="table">
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6393">
+                <span class="fa-fw fa fa-github">Add Module for Windows Privilege Based Migration</span>
+              </a>
+              <a title="Add Module for Windows Privilege Based Migration" href="https://github.com/rapid7/metasploit-framework/issues/6393">Add Module for Windows Privilege Based Migration
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-23T19:45:36-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              jhale85446
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6392">
+                <span class="fa-fw fa fa-github">Fix #6362, avoid overriding def peer repeatedly</span>
+              </a>
+              <a title="Fix #6362, avoid overriding def peer repeatedly" href="https://github.com/rapid7/metasploit-framework/issues/6392">Fix #6362, avoid overriding def peer repeatedly
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-23T11:55:17-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              wchen-r7
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6390">
+                <span class="fa-fw fa fa-github">Fix #6371, being able to report an exception in #job_run_proc</span>
+              </a>
+              <a title="Fix #6371, being able to report an exception in #job_run_proc" href="https://github.com/rapid7/metasploit-framework/issues/6390">Fix #6371, being able to report an exception in #job_run_proc
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-22T16:58:07-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              wchen-r7
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6388">
+                <span class="fa-fw fa fa-github">Update msftidy to error when module super class is incorrect</span>
+              </a>
+              <a title="Update msftidy to error when module super class is incorrect" href="https://github.com/rapid7/metasploit-framework/issues/6388">Update msftidy to error when module super class is incorrect
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-22T15:40:15-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              jhart-r7
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6386">
+                <span class="fa-fw fa fa-github">Gather VNC null byte fix + formatting</span>
+              </a>
+              <a title="Gather VNC null byte fix + formatting" href="https://github.com/rapid7/metasploit-framework/issues/6386">Gather VNC null byte fix + formatting
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-22T11:30:56-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              g0tmi1k
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6385">
+                <span class="fa-fw fa fa-github">Add msfvenom -x for Android payloads (fix #6229)</span>
+              </a>
+              <a title="Add msfvenom -x for Android payloads (fix #6229)" href="https://github.com/rapid7/metasploit-framework/issues/6385">Add msfvenom -x for Android payloads (fix #6229)
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-22T10:19:31-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              timwr
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6378">
+                <span class="fa-fw fa fa-github">Store Groups, Computers and Nested User Membership from AD into a local SQLite database</span>
+              </a>
+              <a title="Store Groups, Computers and Nested User Membership from AD into a local SQLite database" href="https://github.com/rapid7/metasploit-framework/issues/6378">Store Groups, Computers and Nested User Membership from AD into a local SQLite database
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-21T12:37:04-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              stufus
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6377">
+                <span class="fa-fw fa fa-github">Generate CSV Organisational Chart Data From AD</span>
+              </a>
+              <a title="Generate CSV Organisational Chart Data From AD" href="https://github.com/rapid7/metasploit-framework/issues/6377">Generate CSV Organisational Chart Data From AD
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-21T12:08:24-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              stufus
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6375">
+                <span class="fa-fw fa fa-github">Identify Managed AD Security Groups</span>
+              </a>
+              <a title="Identify Managed AD Security Groups" href="https://github.com/rapid7/metasploit-framework/issues/6375">Identify Managed AD Security Groups
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-20T16:19:34-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              stufus
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6374">
+                <span class="fa-fw fa fa-github">Update the Lastpass creds module with new attack vectors</span>
+              </a>
+              <a title="Update the Lastpass creds module with new attack vectors" href="https://github.com/rapid7/metasploit-framework/issues/6374">Update the Lastpass creds module with new attack vectors
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-20T01:55:23-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              martinvigo
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6367">
+                <span class="fa-fw fa fa-github">Add MS15-134 Microsoft Windows Media Center MCL Information Disclosure</span>
+              </a>
+              <a title="Add MS15-134 Microsoft Windows Media Center MCL Information Disclosure" href="https://github.com/rapid7/metasploit-framework/issues/6367">Add MS15-134 Microsoft Windows Media Center MCL Information Disclosure
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-17T22:47:00-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              wchen-r7
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6391">
+                <span class="fa-fw fa fa-github">remove duplicate key warning from Ruby 2.2.x</span>
+              </a>
+              <a title="remove duplicate key warning from Ruby 2.2.x" href="https://github.com/rapid7/metasploit-framework/issues/6391">remove duplicate key warning from Ruby 2.2.x
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-23T10:42:37-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              bcook-r7
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6387">
+                <span class="fa-fw fa fa-github">use the new and shiny joomla mixin</span>
+              </a>
+              <a title="use the new and shiny joomla mixin" href="https://github.com/rapid7/metasploit-framework/issues/6387">use the new and shiny joomla mixin
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-22T14:38:10-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              FireFart
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6384">
+                <span class="fa-fw fa fa-github">Add original exploit discoverer and exploit-db ref</span>
+              </a>
+              <a title="Add original exploit discoverer and exploit-db ref" href="https://github.com/rapid7/metasploit-framework/issues/6384">Add original exploit discoverer and exploit-db ref
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-22T08:46:37-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              shipcod3
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6382">
+                <span class="fa-fw fa fa-github">Fix mispelling in nessus plugin help</span>
+              </a>
+              <a title="Fix mispelling in nessus plugin help" href="https://github.com/rapid7/metasploit-framework/issues/6382">Fix mispelling in nessus plugin help
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-22T06:44:44-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              llmora
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6381">
+                <span class="fa-fw fa fa-github">Issue #6359 fix - post/multi/manage/shell_to_meterpreter.rb</span>
+              </a>
+              <a title="Issue #6359 fix - post/multi/manage/shell_to_meterpreter.rb" href="https://github.com/rapid7/metasploit-framework/issues/6381">Issue #6359 fix - post/multi/manage/shell_to_meterpreter.rb
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-22T05:34:28-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              psychomario
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6380">
+                <span class="fa-fw fa fa-github">Add linux/x86/meterpreter/reverse_tcp to the preference list</span>
+              </a>
+              <a title="Add linux/x86/meterpreter/reverse_tcp to the preference list" href="https://github.com/rapid7/metasploit-framework/issues/6380">Add linux/x86/meterpreter/reverse_tcp to the preference list
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-21T23:12:50-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              wchen-r7
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6373">
+                <span class="fa-fw fa fa-github">Convert joomla_version.rb to a Joomla mixin</span>
+              </a>
+              <a title="Convert joomla_version.rb to a Joomla mixin" href="https://github.com/rapid7/metasploit-framework/issues/6373">Convert joomla_version.rb to a Joomla mixin
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-18T21:20:08-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              wchen-r7
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6372">
+                <span class="fa-fw fa fa-github">Fix nil bug and missing return in psexec</span>
+              </a>
+              <a title="Fix nil bug and missing return in psexec" href="https://github.com/rapid7/metasploit-framework/issues/6372">Fix nil bug and missing return in psexec
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-18T15:57:34-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              wvu-r7
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6370">
+                <span class="fa-fw fa fa-github">add joomla reference</span>
+              </a>
+              <a title="add joomla reference" href="https://github.com/rapid7/metasploit-framework/issues/6370">add joomla reference
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-18T11:28:45-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              FireFart
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6368">
+                <span class="fa-fw fa fa-github">Remove uptime_file_upload.rb, use uptime_file_upload_1</span>
+              </a>
+              <a title="Remove uptime_file_upload.rb, use uptime_file_upload_1" href="https://github.com/rapid7/metasploit-framework/issues/6368">Remove uptime_file_upload.rb, use uptime_file_upload_1
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-17T23:07:07-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              wchen-r7
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-payloads/issues/60">
+                <span class="fa-fw fa fa-github">quick fix for geo interval_collect</span>
+              </a>
+              <a title="quick fix for geo interval_collect" href="https://github.com/rapid7/metasploit-payloads/issues/60">quick fix for geo interval_collect
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-24T02:51:54-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              timwr
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-payloads/issues/59">
+                <span class="fa-fw fa fa-github">Avoiding conditional directives that break statements.</span>
+              </a>
+              <a title="Avoiding conditional directives that break statements." href="https://github.com/rapid7/metasploit-payloads/issues/59">Avoiding conditional directives that break statements.
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-21T09:23:41-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              RomeroMalaquias
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-payloads/issues/57">
+                <span class="fa-fw fa fa-github">Add python extension multiprocessing</span>
+              </a>
+              <a title="Add python extension multiprocessing" href="https://github.com/rapid7/metasploit-payloads/issues/57">Add python extension multiprocessing
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-18T17:48:44-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              OJ
+            </td>
+          </tr></table></div></div></div>
+    <div class="panel panel-primary">
+      <div class="panel-heading" data-toggle="collapse"
+           data-parent="#accordion" data-target="#features_and_enhancements">
+        <h4 class="panel-title">New Open Features and Enhancements</h4>
+      </div>
+      <div id="features_and_enhancements" class="panel-collapse collapse">
+      <div class="panel-body">
+        Check out some of the new Open Features and Enhancements for this week!
+      </div>
+      <div class="table-responsive">
+      <table class="table">
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6365">
+                <span class="fa-fw fa fa-github">Update msftidy to enforce that modules of specific type (auxiliary, post, exploit, etc) use the correct class</span>
+              </a>
+              <a title="Update msftidy to enforce that modules of specific type (auxiliary, post, exploit, etc) use the correct class" href="https://github.com/rapid7/metasploit-framework/issues/6365">Update msftidy to enforce that modules of specific type (auxiliary, post, exploit, etc) use the correct class
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-17T15:09:12-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              jhart-r7
+            </td>
+          </tr></table></div></div></div>
+    <div class="panel panel-primary">
+      <div class="panel-heading" data-toggle="collapse"
+           data-parent="#accordion" data-target="#bugs">
+        <h4 class="panel-title">New Open Bugs</h4>
+      </div>
+      <div id="bugs" class="panel-collapse collapse">
+      <div class="panel-body">
+        Check out some of the new Open Bugs for this week!
+      </div>
+      <div class="table-responsive">
+      <table class="table">
+    
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6371">
+                <span class="fa-fw fa fa-github">Error in firefox_xpi_bootstrapped_addon exploit</span>
+              </a>
+              <a title="Error in firefox_xpi_bootstrapped_addon exploit" href="https://github.com/rapid7/metasploit-framework/issues/6371">Error in firefox_xpi_bootstrapped_addon exploit
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-18T14:03:48-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Crushpest
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6369">
+                <span class="fa-fw fa fa-github">[Feature Request] Python module run in background</span>
+              </a>
+              <a title="[Feature Request] Python module run in background" href="https://github.com/rapid7/metasploit-framework/issues/6369">[Feature Request] Python module run in background
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-18T08:31:16-06:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              psychomario
+            </td>
+          </tr></table></div></div></div></div>
+  </body>
+</html>
