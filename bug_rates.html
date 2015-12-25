@@ -57,17 +57,17 @@
   </li>
   <li role="presentation">
     <a href="pull_requests.html" >Open Pull Requests
-      <span class="badge">24 since last week</span>
+      <span class="badge">25 since last week</span>
     </a>
   </li>
   <li role="presentation">
     <a href="features_and_enhancements.html" >Open Features and Enhancements
-      <span class="badge">1 since last week</span>
+      <span class="badge">0 since last week</span>
     </a>
   </li>
   <li role="presentation">
     <a href="bugs.html" >Open Bugs
-      <span class="badge">2 since last week</span>
+      <span class="badge">3 since last week</span>
     </a>
   </li>
           </li>
@@ -119,8 +119,8 @@
                 },
 
                 series: [
-				{ name: "Opened Bugs per Quarter", data: [[1412035200000, 41], [1419984000000, 136], [1427760000000, 109], [1435622400000, 87], [1443571200000, 59], [1451520000000, 51]] },
-				{ name: "Closed Bugs per Quarter", data: [[1412035200000, 3], [1419984000000, 100], [1427760000000, 84], [1435622400000, 97], [1443571200000, 46], [1451520000000, 38]] },
+				{ name: "Opened Bugs per Quarter", data: [[1412035200000, 41], [1419984000000, 136], [1427760000000, 109], [1435622400000, 87], [1443571200000, 59], [1451520000000, 52]] },
+				{ name: "Closed Bugs per Quarter", data: [[1412035200000, 3], [1419984000000, 100], [1427760000000, 84], [1435622400000, 97], [1443571200000, 46], [1451520000000, 39]] },
 				]
             });
         });
@@ -132,9 +132,9 @@
     </div>
     <table class="table table-striped">
       <h2>Top committers this last week</h2>
-      <tr><td>wchen-r7 (57)</td><td>Jon Hart (54)</td><td>Brent Cook (50)</td><td>Luke Imhoff (44)</td><td>jvazquez-r7 (32)</td><td>Christian Mehlmauer (31)</td><td>JT (24)</td><td>William Vu (24)</td><td>Greg Mikeska (20)</td><td>Spencer McIntyre (9)</td></tr>
-      <tr><td>Stuart Morgan (8)</td><td>Louis Sato (7)</td><td>Gregory Mikeska (6)</td><td>HD Moore (5)</td><td>nixawk (5)</td><td>James Lee (4)</td><td>Metasploit (4)</td><td>Andrew Smith (4)</td><td>Tim (3)</td><td>dmohanty-r7 (3)</td></tr>
-      <tr><td>Bigendian Smalls (3)</td><td>Rory McNamara (3)</td><td>OJ (3)</td><td>Vex Woo (3)</td><td>lsanchez-r7 (2)</td><td>Kyle Gray (2)</td><td>Jon Cave (2)</td><td>Tod Beardsley (2)</td><td>BAZIN-HSC (2)</td><td>David Maloney (1)</td></tr>
+      <tr><td>wchen-r7 (59)</td><td>Jon Hart (57)</td><td>Brent Cook (54)</td><td>Luke Imhoff (44)</td><td>jvazquez-r7 (32)</td><td>Christian Mehlmauer (31)</td><td>William Vu (23)</td><td>JT (22)</td><td>Greg Mikeska (20)</td><td>Spencer McIntyre (9)</td></tr>
+      <tr><td>Stuart Morgan (8)</td><td>Louis Sato (6)</td><td>Gregory Mikeska (6)</td><td>James Lee (5)</td><td>HD Moore (5)</td><td>nixawk (5)</td><td>Metasploit (5)</td><td>Andrew Smith (4)</td><td>OJ (3)</td><td>Bigendian Smalls (3)</td></tr>
+      <tr><td>dmohanty-r7 (3)</td><td>Tim (3)</td><td>Rory McNamara (3)</td><td>lsanchez-r7 (2)</td><td>Jon Cave (2)</td><td>Tod Beardsley (2)</td><td>Vex Woo (2)</td><td>BAZIN-HSC (2)</td><td>Lluis Mora (1)</td><td>karllll (1)</td></tr>
     </table>
     <h2>Top items this last week</h2>
     
@@ -153,6 +153,24 @@
     
           <tr>
             <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6395">
+                <span class="fa-fw fa fa-github">Fix recovery_files.rb Description grammar errors</span>
+              </a>
+              <a title="Fix recovery_files.rb Description grammar errors" href="https://github.com/rapid7/metasploit-framework/issues/6395">Fix recovery_files.rb Description grammar errors
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-24T15:20:45+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              karllll
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6393">
                 <span class="fa-fw fa fa-github">Add Module for Windows Privilege Based Migration</span>
               </a>
@@ -167,24 +185,6 @@
 
             <td class="resource_author" nowrap>
               jhale85446
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6392">
-                <span class="fa-fw fa fa-github">Fix #6362, avoid overriding def peer repeatedly</span>
-              </a>
-              <a title="Fix #6362, avoid overriding def peer repeatedly" href="https://github.com/rapid7/metasploit-framework/issues/6392">Fix #6362, avoid overriding def peer repeatedly
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2015-12-23T17:55:17+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              wchen-r7
             </td>
           </tr>
           <tr>
@@ -333,16 +333,52 @@
           </tr>
           <tr>
             <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6367">
-                <span class="fa-fw fa fa-github">Add MS15-134 Microsoft Windows Media Center MCL Information Disclosure</span>
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6397">
+                <span class="fa-fw fa fa-github">Use bind_addresses rather than bind_address; fixes #6394</span>
               </a>
-              <a title="Add MS15-134 Microsoft Windows Media Center MCL Information Disclosure" href="https://github.com/rapid7/metasploit-framework/issues/6367">Add MS15-134 Microsoft Windows Media Center MCL Information Disclosure
+              <a title="Use bind_addresses rather than bind_address; fixes #6394" href="https://github.com/rapid7/metasploit-framework/issues/6397">Use bind_addresses rather than bind_address; fixes #6394
                 <span class="fa-fw fa fa-info-circle"></span>
               </a>
             </td>
 
             <td class="resource_date" nowrap>
-              <em>2015-12-18T04:47:00+00:00</em>
+              <em>2015-12-24T17:21:44+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              jhart-r7
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6396">
+                <span class="fa-fw fa fa-github">Fix PACKETSTORM warnings; improve msftidy to catch more</span>
+              </a>
+              <a title="Fix PACKETSTORM warnings; improve msftidy to catch more" href="https://github.com/rapid7/metasploit-framework/issues/6396">Fix PACKETSTORM warnings; improve msftidy to catch more
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-24T17:15:31+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              jhart-r7
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6392">
+                <span class="fa-fw fa fa-github">Fix #6362, avoid overriding def peer repeatedly</span>
+              </a>
+              <a title="Fix #6362, avoid overriding def peer repeatedly" href="https://github.com/rapid7/metasploit-framework/issues/6392">Fix #6362, avoid overriding def peer repeatedly
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-23T17:55:17+00:00</em>
             </td>
 
             <td class="resource_author" nowrap>
@@ -513,24 +549,6 @@
           </tr>
           <tr>
             <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6368">
-                <span class="fa-fw fa fa-github">Remove uptime_file_upload.rb, use uptime_file_upload_1</span>
-              </a>
-              <a title="Remove uptime_file_upload.rb, use uptime_file_upload_1" href="https://github.com/rapid7/metasploit-framework/issues/6368">Remove uptime_file_upload.rb, use uptime_file_upload_1
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2015-12-18T05:07:07+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              wchen-r7
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/metasploit-payloads/issues/60">
                 <span class="fa-fw fa fa-github">quick fix for geo interval_collect</span>
               </a>
@@ -594,25 +612,7 @@
       </div>
       <div class="table-responsive">
       <table class="table">
-    
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6365">
-                <span class="fa-fw fa fa-github">Update msftidy to enforce that modules of specific type (auxiliary, post, exploit, etc) use the correct class</span>
-              </a>
-              <a title="Update msftidy to enforce that modules of specific type (auxiliary, post, exploit, etc) use the correct class" href="https://github.com/rapid7/metasploit-framework/issues/6365">Update msftidy to enforce that modules of specific type (auxiliary, post, exploit, etc) use the correct class
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2015-12-17T21:09:12+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              jhart-r7
-            </td>
-          </tr></table></div></div></div>
+    </table></div></div></div>
     <div class="panel panel-primary">
       <div class="panel-heading" data-toggle="collapse"
            data-parent="#accordion" data-target="#bugs">
@@ -659,6 +659,24 @@
 
             <td class="resource_author" nowrap>
               psychomario
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6394">
+                <span class="fa-fw fa fa-github">ReverseTcpSsl handler broken; NameError undefined local variable or method `bind_address' </span>
+              </a>
+              <a title="ReverseTcpSsl handler broken; NameError undefined local variable or method `bind_address' " href="https://github.com/rapid7/metasploit-framework/issues/6394">ReverseTcpSsl handler broken; NameError undefined local variable or method `bind_address' 
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2015-12-24T08:53:38+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              timest
             </td>
           </tr></table></div></div></div></div>
   </body>
