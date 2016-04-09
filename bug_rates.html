@@ -57,7 +57,7 @@
   </li>
   <li role="presentation">
     <a href="pull_requests.html" >Open Pull Requests
-      <span class="badge">22 since last week</span>
+      <span class="badge">19 since last week</span>
     </a>
   </li>
   <li role="presentation">
@@ -67,7 +67,7 @@
   </li>
   <li role="presentation">
     <a href="bugs.html" >Open Bugs
-      <span class="badge">1 since last week</span>
+      <span class="badge">2 since last week</span>
     </a>
   </li>
           </li>
@@ -119,10 +119,10 @@
                 },
 
                 series: [
-				{ name: "Total Opened Bugs per Quarter", data: [[1412035200000, 41], [1419984000000, 136], [1427760000000, 109], [1435622400000, 87], [1443571200000, 59], [1451520000000, 55], [1459382400000, 37], [1467244800000, 1]] },
-				{ name: "Total Closed Bugs per Quarter", data: [[1412035200000, 3], [1419984000000, 100], [1427760000000, 84], [1435622400000, 97], [1443571200000, 46], [1451520000000, 39], [1459382400000, 25], [1467244800000, 8]] },
-				{ name: "Rapid7 Opened Bugs per Quarter", data: [[1412035200000, 27], [1419984000000, 67], [1427760000000, 42], [1435622400000, 28], [1443571200000, 14], [1451520000000, 31], [1459382400000, 12], [1467244800000, 1]] },
-				{ name: "Rapid7 Closed Bugs per Quarter", data: [[1404735562000, 2], [1412597962000, 48], [1420460362000, 35], [1428322762000, 37], [1436185162000, 11], [1444047562000, 16], [1451909962000, 12], [1459772362000, 2]] },
+				{ name: "Total Opened Bugs per Quarter", data: [[1412035200000, 41], [1419984000000, 136], [1427760000000, 109], [1435622400000, 87], [1443571200000, 59], [1451520000000, 55], [1459382400000, 37], [1467244800000, 2]] },
+				{ name: "Total Closed Bugs per Quarter", data: [[1412035200000, 3], [1419984000000, 100], [1427760000000, 84], [1435622400000, 97], [1443571200000, 46], [1451520000000, 39], [1459382400000, 25], [1467244800000, 9]] },
+				{ name: "Rapid7 Opened Bugs per Quarter", data: [[1412035200000, 27], [1419984000000, 67], [1427760000000, 42], [1435622400000, 28], [1443571200000, 14], [1451520000000, 31], [1459382400000, 12], [1467244800000, 2]] },
+				{ name: "Rapid7 Closed Bugs per Quarter", data: [[1404822010000, 2], [1412684410000, 48], [1420546810000, 35], [1428409210000, 37], [1436271610000, 11], [1444134010000, 16], [1451996410000, 12], [1459858810000, 2]] },
 				]
             });
         });
@@ -134,9 +134,9 @@
     </div>
     <table class="table table-striped">
       <h2>Top committers this last week</h2>
-      <tr><td>wchen-r7 (77)</td><td>Brent Cook (59)</td><td>OJ (38)</td><td>William Vu (25)</td><td>James Lee (22)</td><td>Adam Cammack (12)</td><td>Metasploit (10)</td><td>David Maloney (10)</td><td>Brendan Watters (6)</td><td>Tim (6)</td></tr>
-      <tr><td>Spencer McIntyre (5)</td><td>sinn3r (4)</td><td>Meatballs (4)</td><td>tdoan-r7 (4)</td><td>h00die (4)</td><td>Gregory Mikeska (3)</td><td>thao doan (3)</td><td>Christian Mehlmauer (3)</td><td>Brian Patterson (2)</td><td>RageLtMan (2)</td></tr>
-      <tr><td>greg.mikeska@rapid7.com (2)</td><td>Louis Sato (2)</td><td>Vex Woo (1)</td><td>HD Moore (1)</td><td>l0gan (1)</td><td>Hans-Martin Münch (h0ng10) (1)</td><td>Till Maas (1)</td><td>Justin Steven (1)</td><td>Brendan Coles (1)</td><td>Lexus89 (1)</td></tr>
+      <tr><td>wchen-r7 (77)</td><td>Brent Cook (59)</td><td>OJ (38)</td><td>William Vu (24)</td><td>James Lee (22)</td><td>Adam Cammack (12)</td><td>Metasploit (11)</td><td>David Maloney (7)</td><td>Brendan Watters (6)</td><td>Spencer McIntyre (5)</td></tr>
+      <tr><td>h00die (4)</td><td>Meatballs (4)</td><td>tdoan-r7 (4)</td><td>sinn3r (4)</td><td>thao doan (3)</td><td>Gregory Mikeska (3)</td><td>Christian Mehlmauer (3)</td><td>Tim (3)</td><td>Louis Sato (2)</td><td>greg.mikeska@rapid7.com (2)</td></tr>
+      <tr><td>Brian Patterson (2)</td><td>RageLtMan (2)</td><td>Till Maas (1)</td><td>Vex Woo (1)</td><td>Lexus89 (1)</td><td>Justin Steven (1)</td><td>Steven Seeley (1)</td><td>dmohanty-r7 (1)</td><td>l0gan (1)</td><td>Hans-Martin Münch (h0ng10) (1)</td></tr>
     </table>
     <h2>Top items this last week</h2>
     
@@ -155,20 +155,38 @@
     
           <tr>
             <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6760">
-                <span class="fa-fw fa fa-github">TTL setting honors TTL option</span>
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6765">
+                <span class="fa-fw fa fa-github">Fix #6764, nil SQL error in lib/msf/core/exploit/postgres</span>
               </a>
-              <a title="TTL setting honors TTL option" href="https://github.com/rapid7/metasploit-framework/issues/6760">TTL setting honors TTL option
+              <a title="Fix #6764, nil SQL error in lib/msf/core/exploit/postgres" href="https://github.com/rapid7/metasploit-framework/issues/6765">Fix #6764, nil SQL error in lib/msf/core/exploit/postgres
                 <span class="fa-fw fa fa-info-circle"></span>
               </a>
             </td>
 
             <td class="resource_date" nowrap>
-              <em>2016-04-07T16:14:31+00:00</em>
+              <em>2016-04-08T20:29:55+00:00</em>
             </td>
 
             <td class="resource_author" nowrap>
-              sgonzalez-r7
+              wchen-r7
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6763">
+                <span class="fa-fw fa fa-github">Resolve #6736, Add rspec for login_scanner/redis lib</span>
+              </a>
+              <a title="Resolve #6736, Add rspec for login_scanner/redis lib" href="https://github.com/rapid7/metasploit-framework/issues/6763">Resolve #6736, Add rspec for login_scanner/redis lib
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2016-04-08T16:42:37+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              wchen-r7
             </td>
           </tr>
           <tr>
@@ -263,24 +281,6 @@
           </tr>
           <tr>
             <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6739">
-                <span class="fa-fw fa fa-github">bump travis ruby version</span>
-              </a>
-              <a title="bump travis ruby version" href="https://github.com/rapid7/metasploit-framework/issues/6739">bump travis ruby version
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-04-01T14:10:54+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              FireFart
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6762">
                 <span class="fa-fw fa fa-github">Fix ghetto true/false checking in NOP generator</span>
               </a>
@@ -313,6 +313,24 @@
 
             <td class="resource_author" nowrap>
               farias-r7
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6760">
+                <span class="fa-fw fa fa-github">TTL setting honors TTL option</span>
+              </a>
+              <a title="TTL setting honors TTL option" href="https://github.com/rapid7/metasploit-framework/issues/6760">TTL setting honors TTL option
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2016-04-07T16:14:31+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              sgonzalez-r7
             </td>
           </tr>
           <tr>
@@ -443,78 +461,6 @@
           </tr>
           <tr>
             <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6744">
-                <span class="fa-fw fa fa-github">Address ActiveRecord deprecation warning</span>
-              </a>
-              <a title="Address ActiveRecord deprecation warning" href="https://github.com/rapid7/metasploit-framework/issues/6744">Address ActiveRecord deprecation warning
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-04-02T04:25:48+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              sempervictus
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6743">
-                <span class="fa-fw fa fa-github">reimplement HD's session interrupt handler</span>
-              </a>
-              <a title="reimplement HD's session interrupt handler" href="https://github.com/rapid7/metasploit-framework/issues/6743">reimplement HD's session interrupt handler
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-04-01T20:01:00+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              dmaloney-r7
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6742">
-                <span class="fa-fw fa fa-github">Restore psexec_psh</span>
-              </a>
-              <a title="Restore psexec_psh" href="https://github.com/rapid7/metasploit-framework/issues/6742">Restore psexec_psh
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-04-01T18:58:46+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              wvu-r7
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6741">
-                <span class="fa-fw fa fa-github">Clean up juniper_backdoor</span>
-              </a>
-              <a title="Clean up juniper_backdoor" href="https://github.com/rapid7/metasploit-framework/issues/6741">Clean up juniper_backdoor
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-04-01T16:46:45+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              wvu-r7
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/metasploit-payloads/issues/94">
                 <span class="fa-fw fa fa-github">Enable support of IPv6 address binding</span>
               </a>
@@ -573,6 +519,24 @@
       <div class="table-responsive">
       <table class="table">
     
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/6764">
+                <span class="fa-fw fa fa-github">undefined method `+' for nil in lib/msf/core/exploit/postgres.rb</span>
+              </a>
+              <a title="undefined method `+' for nil in lib/msf/core/exploit/postgres.rb" href="https://github.com/rapid7/metasploit-framework/issues/6764">undefined method `+' for nil in lib/msf/core/exploit/postgres.rb
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2016-04-08T19:32:22+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              wchen-r7
+            </td>
+          </tr>
           <tr>
             <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/metasploit-payloads/issues/95">
