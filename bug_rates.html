@@ -57,7 +57,7 @@
   </li>
   <li role="presentation">
     <a href="pull_requests.html" >Open Pull Requests
-      <span class="badge">30 since last week</span>
+      <span class="badge">28 since last week</span>
     </a>
   </li>
   <li role="presentation">
@@ -67,7 +67,7 @@
   </li>
   <li role="presentation">
     <a href="bugs.html" >Open Bugs
-      <span class="badge">5 since last week</span>
+      <span class="badge">3 since last week</span>
     </a>
   </li>
           </li>
@@ -119,10 +119,10 @@
                 },
 
                 series: [
-				{ name: "Total Opened Bugs per Quarter", data: [[1412035200000, 41], [1419984000000, 136], [1427760000000, 109], [1435622400000, 87], [1443571200000, 59], [1451520000000, 56], [1459382400000, 37], [1467244800000, 50], [1475193600000, 41], [1475193600000, 41]] },
-				{ name: "Total Closed Bugs per Quarter", data: [[1412035200000, 3], [1419984000000, 100], [1427760000000, 84], [1435622400000, 97], [1443571200000, 46], [1451520000000, 39], [1459382400000, 25], [1467244800000, 39], [1475193600000, 33], [1475193600000, 33]] },
-				{ name: "Rapid7 Opened Bugs per Quarter", data: [[1412035200000, 27], [1419984000000, 67], [1427760000000, 42], [1435622400000, 28], [1443571200000, 14], [1451520000000, 31], [1459382400000, 12], [1467244800000, 21], [1475193600000, 12], [1475193600000, 12]] },
-				{ name: "Rapid7 Closed Bugs per Quarter", data: [[1404476570000, 2], [1412338970000, 48], [1420201370000, 35], [1428063770000, 37], [1435926170000, 11], [1443788570000, 16], [1451650970000, 12], [1459513370000, 16], [1467375770000, 12], [1475238170000, 12]] },
+				{ name: "Total Opened Bugs per Quarter", data: [[1412035200000, 41], [1419984000000, 136], [1427760000000, 109], [1435622400000, 87], [1443571200000, 59], [1451520000000, 56], [1459382400000, 37], [1467244800000, 50], [1475193600000, 41], [1483142400000, 2]] },
+				{ name: "Total Closed Bugs per Quarter", data: [[1412035200000, 3], [1419984000000, 100], [1427760000000, 84], [1435622400000, 97], [1443571200000, 46], [1451520000000, 39], [1459382400000, 25], [1467244800000, 39], [1475193600000, 33], [1483142400000, 3]] },
+				{ name: "Rapid7 Opened Bugs per Quarter", data: [[1412035200000, 27], [1419984000000, 67], [1427760000000, 42], [1435622400000, 28], [1443571200000, 14], [1451520000000, 31], [1459382400000, 12], [1467244800000, 21], [1475193600000, 12], [1483142400000, 0]] },
+				{ name: "Rapid7 Closed Bugs per Quarter", data: [[1404562983000, 2], [1412425383000, 48], [1420287783000, 35], [1428150183000, 37], [1436012583000, 11], [1443874983000, 16], [1451737383000, 12], [1459599783000, 16], [1467462183000, 12], [1475324583000, 0]] },
 				]
             });
         });
@@ -134,9 +134,9 @@
     </div>
     <table class="table table-striped">
       <h2>Top committers this last week</h2>
-      <tr><td>Brent Cook (52)</td><td>David Maloney (45)</td><td>TheNaterz (31)</td><td>Tim (28)</td><td>William Vu (28)</td><td>Pearce Barry (22)</td><td>h00die (17)</td><td>Metasploit (17)</td><td>Stephen Haywood (13)</td><td>wchen-r7 (12)</td></tr>
-      <tr><td>Justin Steven (10)</td><td>Mehmet Ince (9)</td><td>zerosum0x0 (9)</td><td>Brendan (8)</td><td>OJ (8)</td><td>Jon Hart (7)</td><td>Pedro Ribeiro (6)</td><td>Jeffrey Martin (6)</td><td>dmohanty-r7 (5)</td><td>aushack (4)</td></tr>
-      <tr><td>Spencer McIntyre (4)</td><td>William Webb (3)</td><td>“Brian (3)</td><td>Agora Security (2)</td><td>nixawk (2)</td><td>James Barnett (2)</td><td>Thao Doan (2)</td><td>Oliver Rumbelow (2)</td><td>George Papakyriakopoulos (2)</td><td>Adam Cammack (2)</td></tr>
+      <tr><td>Brent Cook (61)</td><td>David Maloney (46)</td><td>TheNaterz (31)</td><td>William Vu (30)</td><td>Tim (26)</td><td>Pearce Barry (24)</td><td>h00die (17)</td><td>Metasploit (17)</td><td>Stephen Haywood (13)</td><td>wchen-r7 (13)</td></tr>
+      <tr><td>Justin Steven (10)</td><td>OJ (10)</td><td>Mehmet Ince (9)</td><td>zerosum0x0 (9)</td><td>Brendan (8)</td><td>Jon Hart (7)</td><td>Pedro Ribeiro (6)</td><td>Jeffrey Martin (6)</td><td>dmohanty-r7 (5)</td><td>aushack (4)</td></tr>
+      <tr><td>Spencer McIntyre (4)</td><td>William Webb (3)</td><td>“Brian (3)</td><td>Adam Cammack (3)</td><td>mach-0 (3)</td><td>Agora Security (2)</td><td>nixawk (2)</td><td>James Barnett (2)</td><td>Thao Doan (2)</td><td>Oliver Rumbelow (2)</td></tr>
     </table>
     <h2>Top items this last week</h2>
     
@@ -155,56 +155,56 @@
     
           <tr>
             <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7398">
-                <span class="fa-fw fa fa-github">Fix #7397, linux x64 elf-so template crashes under LD_PRELOAD</span>
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7402">
+                <span class="fa-fw fa fa-github">Linux Priv Esc via overlayfs</span>
               </a>
-              <a title="Fix #7397, linux x64 elf-so template crashes under LD_PRELOAD" href="https://github.com/rapid7/metasploit-framework/issues/7398">Fix #7397, linux x64 elf-so template crashes under LD_PRELOAD
+              <a title="Linux Priv Esc via overlayfs" href="https://github.com/rapid7/metasploit-framework/issues/7402">Linux Priv Esc via overlayfs
                 <span class="fa-fw fa fa-info-circle"></span>
               </a>
             </td>
 
             <td class="resource_date" nowrap>
-              <em>2016-10-04T04:38:09+00:00</em>
+              <em>2016-10-05T03:26:31+00:00</em>
             </td>
 
             <td class="resource_author" nowrap>
-              mach-0
+              h00die
             </td>
           </tr>
           <tr>
             <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7396">
-                <span class="fa-fw fa fa-github">Support driver list, adjust capcom exploit</span>
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7401">
+                <span class="fa-fw fa fa-github">refresh sysinfo when explicitly requested on a session</span>
               </a>
-              <a title="Support driver list, adjust capcom exploit" href="https://github.com/rapid7/metasploit-framework/issues/7396">Support driver list, adjust capcom exploit
+              <a title="refresh sysinfo when explicitly requested on a session" href="https://github.com/rapid7/metasploit-framework/issues/7401">refresh sysinfo when explicitly requested on a session
                 <span class="fa-fw fa fa-info-circle"></span>
               </a>
             </td>
 
             <td class="resource_date" nowrap>
-              <em>2016-10-04T01:43:09+00:00</em>
+              <em>2016-10-05T03:11:25+00:00</em>
             </td>
 
             <td class="resource_author" nowrap>
-              OJ
+              bcook-r7
             </td>
           </tr>
           <tr>
             <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7395">
-                <span class="fa-fw fa fa-github">Make errors more meaningful for wp_ninja_forms_unauthenticated_file_upload</span>
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7400">
+                <span class="fa-fw fa fa-github">Add CVE-2016-1954, RCE on Firefox < 45.0</span>
               </a>
-              <a title="Make errors more meaningful for wp_ninja_forms_unauthenticated_file_upload" href="https://github.com/rapid7/metasploit-framework/issues/7395">Make errors more meaningful for wp_ninja_forms_unauthenticated_file_upload
+              <a title="Add CVE-2016-1954, RCE on Firefox < 45.0" href="https://github.com/rapid7/metasploit-framework/issues/7400">Add CVE-2016-1954, RCE on Firefox < 45.0
                 <span class="fa-fw fa fa-info-circle"></span>
               </a>
             </td>
 
             <td class="resource_date" nowrap>
-              <em>2016-10-03T20:34:22+00:00</em>
+              <em>2016-10-04T21:57:35+00:00</em>
             </td>
 
             <td class="resource_author" nowrap>
-              wchen-r7
+              evo1
             </td>
           </tr>
           <tr>
@@ -299,42 +299,6 @@
           </tr>
           <tr>
             <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7374">
-                <span class="fa-fw fa fa-github">use templates from the gem for psh</span>
-              </a>
-              <a title="use templates from the gem for psh" href="https://github.com/rapid7/metasploit-framework/issues/7374">use templates from the gem for psh
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-09-28T16:11:52+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              dmaloney-r7
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7369">
-                <span class="fa-fw fa fa-github">Panda Antivirus Priv Esc</span>
-              </a>
-              <a title="Panda Antivirus Priv Esc" href="https://github.com/rapid7/metasploit-framework/issues/7369">Panda Antivirus Priv Esc
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-09-28T00:21:24+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              h00die
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7399">
                 <span class="fa-fw fa fa-github">add reverse_tcp handler to fix bug in latest update</span>
               </a>
@@ -349,6 +313,60 @@
 
             <td class="resource_author" nowrap>
               tkisason
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7398">
+                <span class="fa-fw fa fa-github">Fix #7397, linux x64 elf-so template crashes under LD_PRELOAD</span>
+              </a>
+              <a title="Fix #7397, linux x64 elf-so template crashes under LD_PRELOAD" href="https://github.com/rapid7/metasploit-framework/issues/7398">Fix #7397, linux x64 elf-so template crashes under LD_PRELOAD
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2016-10-04T04:38:09+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              mach-0
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7396">
+                <span class="fa-fw fa fa-github">Support driver list, adjust capcom exploit</span>
+              </a>
+              <a title="Support driver list, adjust capcom exploit" href="https://github.com/rapid7/metasploit-framework/issues/7396">Support driver list, adjust capcom exploit
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2016-10-04T01:43:09+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              OJ
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7395">
+                <span class="fa-fw fa fa-github">Make errors more meaningful for wp_ninja_forms_unauthenticated_file_upload</span>
+              </a>
+              <a title="Make errors more meaningful for wp_ninja_forms_unauthenticated_file_upload" href="https://github.com/rapid7/metasploit-framework/issues/7395">Make errors more meaningful for wp_ninja_forms_unauthenticated_file_upload
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2016-10-03T20:34:22+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              wchen-r7
             </td>
           </tr>
           <tr>
@@ -497,92 +515,20 @@
           </tr>
           <tr>
             <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7372">
-                <span class="fa-fw fa fa-github">Remove the `cat $FILE | grep $PATTERN` anti-pattern</span>
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7374">
+                <span class="fa-fw fa fa-github">use templates from the gem for psh</span>
               </a>
-              <a title="Remove the `cat $FILE | grep $PATTERN` anti-pattern" href="https://github.com/rapid7/metasploit-framework/issues/7372">Remove the `cat $FILE | grep $PATTERN` anti-pattern
+              <a title="use templates from the gem for psh" href="https://github.com/rapid7/metasploit-framework/issues/7374">use templates from the gem for psh
                 <span class="fa-fw fa fa-info-circle"></span>
               </a>
             </td>
 
             <td class="resource_date" nowrap>
-              <em>2016-09-28T11:43:49+00:00</em>
+              <em>2016-09-28T16:11:52+00:00</em>
             </td>
 
             <td class="resource_author" nowrap>
-              jvoisin
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7368">
-                <span class="fa-fw fa fa-github">Filter login scanner specs</span>
-              </a>
-              <a title="Filter login scanner specs" href="https://github.com/rapid7/metasploit-framework/issues/7368">Filter login scanner specs
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-09-27T21:10:13+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              lsato-r7
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7365">
-                <span class="fa-fw fa fa-github">Fix nonce bug in wp_ninja_forms_unauthenticated_file_upload on Windows</span>
-              </a>
-              <a title="Fix nonce bug in wp_ninja_forms_unauthenticated_file_upload on Windows" href="https://github.com/rapid7/metasploit-framework/issues/7365">Fix nonce bug in wp_ninja_forms_unauthenticated_file_upload on Windows
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-09-27T16:57:44+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              wchen-r7
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7364">
-                <span class="fa-fw fa fa-github">update to latest metasploit-payloads</span>
-              </a>
-              <a title="update to latest metasploit-payloads" href="https://github.com/rapid7/metasploit-framework/issues/7364">update to latest metasploit-payloads
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-09-27T16:05:10+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              bcook-r7
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7363">
-                <span class="fa-fw fa fa-github">Add LPE exploit module for the capcom driver flaw</span>
-              </a>
-              <a title="Add LPE exploit module for the capcom driver flaw" href="https://github.com/rapid7/metasploit-framework/issues/7363">Add LPE exploit module for the capcom driver flaw
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-09-27T12:46:43+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              OJ
+              dmaloney-r7
             </td>
           </tr>
           <tr>
@@ -692,6 +638,24 @@
             <td class="resource_author" nowrap>
               wvu-r7
             </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/mettle/issues/29">
+                <span class="fa-fw fa fa-github">fixup absolute path searching when metasploit supplies an incorrect one</span>
+              </a>
+              <a title="fixup absolute path searching when metasploit supplies an incorrect one" href="https://github.com/rapid7/mettle/issues/29">fixup absolute path searching when metasploit supplies an incorrect one
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2016-10-04T22:25:08+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              busterb
+            </td>
           </tr></table></div></div></div>
     <div class="panel panel-primary">
       <div class="panel-heading" data-toggle="collapse"
@@ -737,24 +701,6 @@
           </tr>
           <tr>
             <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7366">
-                <span class="fa-fw fa fa-github">PHP meterpreter no longer works with macOS 10.12 system PHP installation</span>
-              </a>
-              <a title="PHP meterpreter no longer works with macOS 10.12 system PHP installation" href="https://github.com/rapid7/metasploit-framework/issues/7366">PHP meterpreter no longer works with macOS 10.12 system PHP installation
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-09-27T17:20:22+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              bcook-r7
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7389">
                 <span class="fa-fw fa fa-github">nasm_shell.rb cannot find assembly installation</span>
               </a>
@@ -783,24 +729,6 @@
 
             <td class="resource_date" nowrap>
               <em>2016-10-03T23:32:53+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              DiabloHorn
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-payloads/issues/127">
-                <span class="fa-fw fa fa-github">Possible meterpreter registry unicode bug</span>
-              </a>
-              <a title="Possible meterpreter registry unicode bug" href="https://github.com/rapid7/metasploit-payloads/issues/127">Possible meterpreter registry unicode bug
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-09-27T22:25:46+00:00</em>
             </td>
 
             <td class="resource_author" nowrap>
