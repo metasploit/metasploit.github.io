@@ -57,7 +57,7 @@
   </li>
   <li role="presentation">
     <a href="pull_requests.html" >Open Pull Requests
-      <span class="badge">30 since last week</span>
+      <span class="badge">23 since last week</span>
     </a>
   </li>
   <li role="presentation">
@@ -67,7 +67,7 @@
   </li>
   <li role="presentation">
     <a href="bugs.html" >Open Bugs
-      <span class="badge">10 since last week</span>
+      <span class="badge">11 since last week</span>
     </a>
   </li>
           </li>
@@ -119,10 +119,10 @@
                 },
 
                 series: [
-				{ name: "Total Opened Bugs per Quarter", data: [[1412035200000, 41], [1419984000000, 136], [1427760000000, 109], [1435622400000, 87], [1443571200000, 59], [1451520000000, 56], [1459382400000, 37], [1467244800000, 50], [1475193600000, 42], [1483142400000, 31]] },
-				{ name: "Total Closed Bugs per Quarter", data: [[1412035200000, 3], [1419984000000, 100], [1427760000000, 84], [1435622400000, 97], [1443571200000, 46], [1451520000000, 39], [1459382400000, 25], [1467244800000, 39], [1475193600000, 33], [1483142400000, 41]] },
+				{ name: "Total Opened Bugs per Quarter", data: [[1412035200000, 41], [1419984000000, 136], [1427760000000, 109], [1435622400000, 87], [1443571200000, 59], [1451520000000, 56], [1459382400000, 37], [1467244800000, 50], [1475193600000, 42], [1483142400000, 32]] },
+				{ name: "Total Closed Bugs per Quarter", data: [[1412035200000, 3], [1419984000000, 100], [1427760000000, 84], [1435622400000, 97], [1443571200000, 46], [1451520000000, 39], [1459382400000, 25], [1467244800000, 39], [1475193600000, 33], [1483142400000, 43]] },
 				{ name: "Rapid7 Opened Bugs per Quarter", data: [[1412035200000, 27], [1419984000000, 67], [1427760000000, 42], [1435622400000, 28], [1443571200000, 14], [1451520000000, 31], [1459382400000, 12], [1467244800000, 21], [1475193600000, 12], [1483142400000, 3]] },
-				{ name: "Rapid7 Closed Bugs per Quarter", data: [[1408281712000, 2], [1416057712000, 48], [1423833712000, 35], [1431609712000, 37], [1439385712000, 11], [1447161712000, 16], [1454937712000, 12], [1462713712000, 16], [1470489712000, 12], [1478265712000, 14]] },
+				{ name: "Rapid7 Closed Bugs per Quarter", data: [[1408368140000, 2], [1416144140000, 48], [1423920140000, 35], [1431696140000, 37], [1439472140000, 11], [1447248140000, 16], [1455024140000, 12], [1462800140000, 16], [1470576140000, 12], [1478352140000, 15]] },
 				]
             });
         });
@@ -134,9 +134,9 @@
     </div>
     <table class="table table-striped">
       <h2>Top committers this last week</h2>
-      <tr><td>Brent Cook (80)</td><td>OJ (51)</td><td>Metasploit (38)</td><td>wchen-r7 (18)</td><td>Lance Sanchez (17)</td><td>William Vu (17)</td><td>Brendan (13)</td><td>David Maloney (12)</td><td>Jon Hart (11)</td><td>Pearce Barry (11)</td></tr>
-      <tr><td>lsanchez-r7 (8)</td><td>Filipe Reis (8)</td><td>drforbin (7)</td><td>Spencer McIntyre (7)</td><td>Jin Qian (7)</td><td>dmohanty-r7 (5)</td><td>Pedro Ribeiro (5)</td><td>Dylan Davis (5)</td><td>h00die (5)</td><td>William Webb (5)</td></tr>
-      <tr><td>Jan Rude (4)</td><td>attackdebris (4)</td><td>Tijl Deneut (4)</td><td>Chris Higgins (4)</td><td>Brian Patterson (4)</td><td>Louis Sato (3)</td><td>Julien (jvoisin) Voisin (3)</td><td>Adam Cammack (3)</td><td>Kishor Bhat (2)</td><td>mr_me (2)</td></tr>
+      <tr><td>Brent Cook (77)</td><td>OJ (51)</td><td>Metasploit (36)</td><td>wchen-r7 (19)</td><td>Lance Sanchez (17)</td><td>William Vu (17)</td><td>Brendan (13)</td><td>Pearce Barry (13)</td><td>David Maloney (9)</td><td>lsanchez-r7 (8)</td></tr>
+      <tr><td>Filipe Reis (8)</td><td>Jin Qian (8)</td><td>Spencer McIntyre (7)</td><td>Jon Hart (5)</td><td>dmohanty-r7 (5)</td><td>Pedro Ribeiro (5)</td><td>Dylan Davis (5)</td><td>h00die (5)</td><td>William Webb (5)</td><td>Jan Rude (4)</td></tr>
+      <tr><td>attackdebris (4)</td><td>Tijl Deneut (4)</td><td>Chris Higgins (4)</td><td>Julien (jvoisin) Voisin (3)</td><td>Adam Cammack (3)</td><td>Kishor Bhat (2)</td><td>mr_me (2)</td><td>Daniel Werner (2)</td><td>Jeffrey Martin (2)</td><td>Cantoni Matteo (2)</td></tr>
     </table>
     <h2>Top items this last week</h2>
     
@@ -153,42 +153,6 @@
       <div class="table-responsive">
       <table class="table">
     
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7612">
-                <span class="fa-fw fa fa-github">Fix #7603, Race condition when loading auto_win32_multihandler.rc</span>
-              </a>
-              <a title="Fix #7603, Race condition when loading auto_win32_multihandler.rc" href="https://github.com/rapid7/metasploit-framework/issues/7612">Fix #7603, Race condition when loading auto_win32_multihandler.rc
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-11-23T21:11:55+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              wchen-r7
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7611">
-                <span class="fa-fw fa fa-github">Fix #7610, cisco_ironport_enum falsely claimed connection failed.</span>
-              </a>
-              <a title="Fix #7610, cisco_ironport_enum falsely claimed connection failed." href="https://github.com/rapid7/metasploit-framework/issues/7611">Fix #7610, cisco_ironport_enum falsely claimed connection failed.
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-11-23T21:02:36+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              jinq102030
-            </td>
-          </tr>
           <tr>
             <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7609">
@@ -389,20 +353,38 @@
           </tr>
           <tr>
             <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7573">
-                <span class="fa-fw fa fa-github">Add WordPress Symposium Plugin SQL Injection aux module</span>
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7612">
+                <span class="fa-fw fa fa-github">Fix #7603, Race condition when loading auto_win32_multihandler.rc</span>
               </a>
-              <a title="Add WordPress Symposium Plugin SQL Injection aux module" href="https://github.com/rapid7/metasploit-framework/issues/7573">Add WordPress Symposium Plugin SQL Injection aux module
+              <a title="Fix #7603, Race condition when loading auto_win32_multihandler.rc" href="https://github.com/rapid7/metasploit-framework/issues/7612">Fix #7603, Race condition when loading auto_win32_multihandler.rc
                 <span class="fa-fw fa fa-info-circle"></span>
               </a>
             </td>
 
             <td class="resource_date" nowrap>
-              <em>2016-11-17T14:18:05+00:00</em>
+              <em>2016-11-23T21:11:55+00:00</em>
             </td>
 
             <td class="resource_author" nowrap>
-              mcantoni
+              wchen-r7
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7611">
+                <span class="fa-fw fa fa-github">Fix #7610, cisco_ironport_enum falsely claimed connection failed.</span>
+              </a>
+              <a title="Fix #7610, cisco_ironport_enum falsely claimed connection failed." href="https://github.com/rapid7/metasploit-framework/issues/7611">Fix #7610, cisco_ironport_enum falsely claimed connection failed.
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2016-11-23T21:02:36+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              jinq102030
             </td>
           </tr>
           <tr>
@@ -551,78 +533,6 @@
           </tr>
           <tr>
             <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7577">
-                <span class="fa-fw fa fa-github">Fix #7455, handle the URIPORT option properly in is_uxss_injection</span>
-              </a>
-              <a title="Fix #7455, handle the URIPORT option properly in is_uxss_injection" href="https://github.com/rapid7/metasploit-framework/issues/7577">Fix #7455, handle the URIPORT option properly in is_uxss_injection
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-11-17T21:54:10+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              wchen-r7
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7576">
-                <span class="fa-fw fa fa-github">Fix the hanging of module auxiliary/scanner/ftp/titanftp_xcrc_travers…</span>
-              </a>
-              <a title="Fix the hanging of module auxiliary/scanner/ftp/titanftp_xcrc_travers…" href="https://github.com/rapid7/metasploit-framework/issues/7576">Fix the hanging of module auxiliary/scanner/ftp/titanftp_xcrc_travers…
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-11-17T16:24:56+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              jinq102030
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7574">
-                <span class="fa-fw fa fa-github">Update open_proxy aux module</span>
-              </a>
-              <a title="Update open_proxy aux module" href="https://github.com/rapid7/metasploit-framework/issues/7574">Update open_proxy aux module
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-11-17T15:01:33+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              mcantoni
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7572">
-                <span class="fa-fw fa fa-github">Fixed few minor typos - auxiliary/dos/wireshark/ldap.rb, chunked.rb</span>
-              </a>
-              <a title="Fixed few minor typos - auxiliary/dos/wireshark/ldap.rb, chunked.rb" href="https://github.com/rapid7/metasploit-framework/issues/7572">Fixed few minor typos - auxiliary/dos/wireshark/ldap.rb, chunked.rb
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-11-17T13:58:04+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              mcantoni
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/rex-text/issues/6">
                 <span class="fa-fw fa fa-github">remove bins, fix #2</span>
               </a>
@@ -656,42 +566,6 @@
             <td class="resource_author" nowrap>
               bcook-r7
             </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/rex-socket/issues/1">
-                <span class="fa-fw fa fa-github">Add 3.5 second timeout for blocking SSL accepts</span>
-              </a>
-              <a title="Add 3.5 second timeout for blocking SSL accepts" href="https://github.com/rapid7/rex-socket/issues/1">Add 3.5 second timeout for blocking SSL accepts
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-11-17T21:51:15+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              bcook-r7
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/mettle/issues/38">
-                <span class="fa-fw fa fa-github">leave core_uuid in place, store UUID in tlv dispatcher</span>
-              </a>
-              <a title="leave core_uuid in place, store UUID in tlv dispatcher" href="https://github.com/rapid7/mettle/issues/38">leave core_uuid in place, store UUID in tlv dispatcher
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-11-17T13:49:35+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              bcook-r7
-            </td>
           </tr></table></div></div></div>
     <div class="panel panel-primary">
       <div class="panel-heading" data-toggle="collapse"
@@ -719,20 +593,20 @@
     
           <tr>
             <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7610">
-                <span class="fa-fw fa fa-github">Run auxiliary/scanner/http/cisco_ironport_enum and got good response and the module claimed connection failed.</span>
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7613">
+                <span class="fa-fw fa fa-github">Exploit/multi/handler output strange</span>
               </a>
-              <a title="Run auxiliary/scanner/http/cisco_ironport_enum and got good response and the module claimed connection failed." href="https://github.com/rapid7/metasploit-framework/issues/7610">Run auxiliary/scanner/http/cisco_ironport_enum and got good response and the module claimed connection failed.
+              <a title="Exploit/multi/handler output strange" href="https://github.com/rapid7/metasploit-framework/issues/7613">Exploit/multi/handler output strange
                 <span class="fa-fw fa fa-info-circle"></span>
               </a>
             </td>
 
             <td class="resource_date" nowrap>
-              <em>2016-11-23T20:56:23+00:00</em>
+              <em>2016-11-24T20:17:28+00:00</em>
             </td>
 
             <td class="resource_author" nowrap>
-              jinq102030
+              cacaocaca
             </td>
           </tr>
           <tr>
@@ -751,24 +625,6 @@
 
             <td class="resource_author" nowrap>
               jinq102030
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7603">
-                <span class="fa-fw fa fa-github">undefined method `length' for nil:NilClass while generating a payload from msfconsole</span>
-              </a>
-              <a title="undefined method `length' for nil:NilClass while generating a payload from msfconsole" href="https://github.com/rapid7/metasploit-framework/issues/7603">undefined method `length' for nil:NilClass while generating a payload from msfconsole
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-11-22T21:22:49+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              wchen-r7
             </td>
           </tr>
           <tr>
@@ -823,6 +679,42 @@
 
             <td class="resource_author" nowrap>
               andybrucenet
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7610">
+                <span class="fa-fw fa fa-github">Run auxiliary/scanner/http/cisco_ironport_enum and got good response and the module claimed connection failed.</span>
+              </a>
+              <a title="Run auxiliary/scanner/http/cisco_ironport_enum and got good response and the module claimed connection failed." href="https://github.com/rapid7/metasploit-framework/issues/7610">Run auxiliary/scanner/http/cisco_ironport_enum and got good response and the module claimed connection failed.
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2016-11-23T20:56:23+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              jinq102030
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7603">
+                <span class="fa-fw fa fa-github">undefined method `length' for nil:NilClass while generating a payload from msfconsole</span>
+              </a>
+              <a title="undefined method `length' for nil:NilClass while generating a payload from msfconsole" href="https://github.com/rapid7/metasploit-framework/issues/7603">undefined method `length' for nil:NilClass while generating a payload from msfconsole
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2016-11-22T21:22:49+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              wchen-r7
             </td>
           </tr>
           <tr>
