@@ -57,17 +57,17 @@
   </li>
   <li role="presentation">
     <a href="pull_requests.html" >Open Pull Requests
-      <span class="badge">25 since last week</span>
+      <span class="badge">26 since last week</span>
     </a>
   </li>
   <li role="presentation">
     <a href="features_and_enhancements.html" >Open Features and Enhancements
-      <span class="badge">2 since last week</span>
+      <span class="badge">0 since last week</span>
     </a>
   </li>
   <li role="presentation">
     <a href="bugs.html" >Open Bugs
-      <span class="badge">2 since last week</span>
+      <span class="badge">4 since last week</span>
     </a>
   </li>
           </li>
@@ -119,10 +119,10 @@
                 },
 
                 series: [
-				{ name: "Total Opened Bugs per Quarter", data: [[1412035200000, 41], [1419984000000, 136], [1427760000000, 109], [1435622400000, 87], [1443571200000, 59], [1451520000000, 56], [1459382400000, 37], [1467244800000, 50], [1475193600000, 42], [1483142400000, 37]] },
+				{ name: "Total Opened Bugs per Quarter", data: [[1412035200000, 41], [1419984000000, 136], [1427760000000, 109], [1435622400000, 87], [1443571200000, 59], [1451520000000, 56], [1459382400000, 37], [1467244800000, 50], [1475193600000, 42], [1483142400000, 39]] },
 				{ name: "Total Closed Bugs per Quarter", data: [[1412035200000, 3], [1419984000000, 100], [1427760000000, 84], [1435622400000, 97], [1443571200000, 46], [1451520000000, 39], [1459382400000, 25], [1467244800000, 39], [1475193600000, 33], [1483142400000, 50]] },
-				{ name: "Rapid7 Opened Bugs per Quarter", data: [[1412035200000, 27], [1419984000000, 67], [1427760000000, 42], [1435622400000, 28], [1443571200000, 14], [1451520000000, 31], [1459382400000, 12], [1467244800000, 21], [1475193600000, 12], [1483142400000, 3]] },
-				{ name: "Rapid7 Closed Bugs per Quarter", data: [[1409404902000, 2], [1417180902000, 48], [1424956902000, 35], [1432732902000, 37], [1440508902000, 11], [1448284902000, 16], [1456060902000, 12], [1463836902000, 16], [1471612902000, 12], [1479388902000, 15]] },
+				{ name: "Rapid7 Opened Bugs per Quarter", data: [[1412035200000, 27], [1419984000000, 67], [1427760000000, 42], [1435622400000, 28], [1443571200000, 14], [1451520000000, 31], [1459382400000, 12], [1467244800000, 21], [1475193600000, 12], [1483142400000, 4]] },
+				{ name: "Rapid7 Closed Bugs per Quarter", data: [[1409491211000, 2], [1417267211000, 48], [1425043211000, 35], [1432819211000, 37], [1440595211000, 11], [1448371211000, 16], [1456147211000, 12], [1463923211000, 16], [1471699211000, 12], [1479475211000, 15]] },
 				]
             });
         });
@@ -134,9 +134,9 @@
     </div>
     <table class="table table-striped">
       <h2>Top committers this last week</h2>
-      <tr><td>Brent Cook (80)</td><td>Metasploit (41)</td><td>wchen-r7 (33)</td><td>David Maloney (21)</td><td>Lance Sanchez (17)</td><td>William Vu (15)</td><td>Jin Qian (14)</td><td>lsanchez-r7 (13)</td><td>OJ (13)</td><td>Brendan (11)</td></tr>
-      <tr><td>Pearce Barry (8)</td><td>Tim (8)</td><td>Dylan Davis (7)</td><td>Cantoni Matteo (6)</td><td>Jeffrey Martin (6)</td><td>Pedro Ribeiro (5)</td><td>Spencer McIntyre (4)</td><td>root (4)</td><td>William Webb (4)</td><td>h00die (3)</td></tr>
-      <tr><td>Adam Cammack (3)</td><td>dmohanty-r7 (3)</td><td>darkbushido (3)</td><td>Kishor Bhat (2)</td><td>Chris Higgins (2)</td><td>John Q. Public (2)</td><td>Yorick Koster (1)</td><td>scriptjunkie (1)</td><td>dana-at-cp (1)</td><td>Jenna Magius (1)</td></tr>
+      <tr><td>Brent Cook (80)</td><td>Metasploit (42)</td><td>wchen-r7 (34)</td><td>David Maloney (28)</td><td>Lance Sanchez (17)</td><td>William Vu (15)</td><td>Jin Qian (14)</td><td>lsanchez-r7 (13)</td><td>OJ (13)</td><td>Brendan (11)</td></tr>
+      <tr><td>Pearce Barry (9)</td><td>Tim (8)</td><td>Dylan Davis (7)</td><td>Cantoni Matteo (6)</td><td>Jeffrey Martin (6)</td><td>Spencer McIntyre (4)</td><td>root (4)</td><td>William Webb (4)</td><td>h00die (3)</td><td>Adam Cammack (3)</td></tr>
+      <tr><td>dmohanty-r7 (3)</td><td>darkbushido (3)</td><td>Pedro Ribeiro (2)</td><td>John Q. Public (2)</td><td>Kishor Bhat (1)</td><td>Yorick Koster (1)</td><td>scriptjunkie (1)</td><td>dana-at-cp (1)</td><td>Jenna Magius (1)</td><td>Chris Higgins (1)</td></tr>
     </table>
     <h2>Top items this last week</h2>
     
@@ -153,6 +153,60 @@
       <div class="table-responsive">
       <table class="table">
     
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7674">
+                <span class="fa-fw fa fa-github">Move migration stub generation into MSF</span>
+              </a>
+              <a title="Move migration stub generation into MSF" href="https://github.com/rapid7/metasploit-framework/issues/7674">Move migration stub generation into MSF
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2016-12-08T06:09:02+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              OJ
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7672">
+                <span class="fa-fw fa fa-github">Fix #7671, support LOCKED_OUT and DISABLED login status</span>
+              </a>
+              <a title="Fix #7671, support LOCKED_OUT and DISABLED login status" href="https://github.com/rapid7/metasploit-framework/issues/7672">Fix #7671, support LOCKED_OUT and DISABLED login status
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2016-12-07T22:54:43+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              wchen-r7
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7670">
+                <span class="fa-fw fa fa-github">Fix the prompt again</span>
+              </a>
+              <a title="Fix the prompt again" href="https://github.com/rapid7/metasploit-framework/issues/7670">Fix the prompt again
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2016-12-07T20:43:43+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              bwatters-r7
+            </td>
+          </tr>
           <tr>
             <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7669">
@@ -173,24 +227,6 @@
           </tr>
           <tr>
             <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7665">
-                <span class="fa-fw fa fa-github">prevent further lockouts in smb_login</span>
-              </a>
-              <a title="prevent further lockouts in smb_login" href="https://github.com/rapid7/metasploit-framework/issues/7665">prevent further lockouts in smb_login
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-12-07T02:57:44+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              rwhitcroft
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7664">
                 <span class="fa-fw fa fa-github">Overwatch Plugin - Active Routing and Session Management</span>
               </a>
@@ -205,24 +241,6 @@
 
             <td class="resource_author" nowrap>
               sn0wfa11
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7662">
-                <span class="fa-fw fa fa-github">Payload Handler Console Command</span>
-              </a>
-              <a title="Payload Handler Console Command" href="https://github.com/rapid7/metasploit-framework/issues/7662">Payload Handler Console Command
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-12-06T21:36:14+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              dmaloney-r7
             </td>
           </tr>
           <tr>
@@ -299,6 +317,24 @@
           </tr>
           <tr>
             <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7665">
+                <span class="fa-fw fa fa-github">prevent further lockouts in smb_login</span>
+              </a>
+              <a title="prevent further lockouts in smb_login" href="https://github.com/rapid7/metasploit-framework/issues/7665">prevent further lockouts in smb_login
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2016-12-07T02:57:44+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              rwhitcroft
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7663">
                 <span class="fa-fw fa fa-github">Repair cross architecture migration on Windows</span>
               </a>
@@ -313,6 +349,24 @@
 
             <td class="resource_author" nowrap>
               sempervictus
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7662">
+                <span class="fa-fw fa fa-github">Payload Handler Console Command</span>
+              </a>
+              <a title="Payload Handler Console Command" href="https://github.com/rapid7/metasploit-framework/issues/7662">Payload Handler Console Command
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2016-12-06T21:36:14+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              dmaloney-r7
             </td>
           </tr>
           <tr>
@@ -497,56 +551,20 @@
           </tr>
           <tr>
             <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7641">
-                <span class="fa-fw fa fa-github">Fix issue #7640 where cisco SSL VPN not move despite server responded</span>
+              <a target="_blank" href="https://github.com/rapid7/metasploit-payloads/issues/155">
+                <span class="fa-fw fa fa-github">Move migration stub code to MSF</span>
               </a>
-              <a title="Fix issue #7640 where cisco SSL VPN not move despite server responded" href="https://github.com/rapid7/metasploit-framework/issues/7641">Fix issue #7640 where cisco SSL VPN not move despite server responded
+              <a title="Move migration stub code to MSF" href="https://github.com/rapid7/metasploit-payloads/issues/155">Move migration stub code to MSF
                 <span class="fa-fw fa fa-info-circle"></span>
               </a>
             </td>
 
             <td class="resource_date" nowrap>
-              <em>2016-11-30T22:27:29+00:00</em>
+              <em>2016-12-08T06:08:53+00:00</em>
             </td>
 
             <td class="resource_author" nowrap>
-              jinq102030
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7639">
-                <span class="fa-fw fa fa-github">Fix #7628, concrete5_member_list HTML parser</span>
-              </a>
-              <a title="Fix #7628, concrete5_member_list HTML parser" href="https://github.com/rapid7/metasploit-framework/issues/7639">Fix #7628, concrete5_member_list HTML parser
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-11-30T20:31:31+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              wchen-r7
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7636">
-                <span class="fa-fw fa fa-github">fix sleep and transport on android</span>
-              </a>
-              <a title="fix sleep and transport on android" href="https://github.com/rapid7/metasploit-framework/issues/7636">fix sleep and transport on android
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-11-30T14:09:20+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              timwr
+              OJ
             </td>
           </tr>
           <tr>
@@ -614,43 +632,7 @@
       </div>
       <div class="table-responsive">
       <table class="table">
-    
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7642">
-                <span class="fa-fw fa fa-github">Feature Request: Add a sort option to the services command</span>
-              </a>
-              <a title="Feature Request: Add a sort option to the services command" href="https://github.com/rapid7/metasploit-framework/issues/7642">Feature Request: Add a sort option to the services command
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-11-30T22:50:59+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              jnqpblc
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7637">
-                <span class="fa-fw fa fa-github">Create exploit module for new Firefox/TBB SMIL animation vulnerability</span>
-              </a>
-              <a title="Create exploit module for new Firefox/TBB SMIL animation vulnerability" href="https://github.com/rapid7/metasploit-framework/issues/7637">Create exploit module for new Firefox/TBB SMIL animation vulnerability
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2016-11-30T18:11:20+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              wwebb-r7
-            </td>
-          </tr></table></div></div></div>
+    </table></div></div></div>
     <div class="panel panel-primary">
       <div class="panel-heading" data-toggle="collapse"
            data-parent="#accordion" data-target="#bugs">
@@ -663,6 +645,42 @@
       <div class="table-responsive">
       <table class="table">
     
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7673">
+                <span class="fa-fw fa fa-github">bypassuac_injection needs updating due to changes in Windows 10</span>
+              </a>
+              <a title="bypassuac_injection needs updating due to changes in Windows 10" href="https://github.com/rapid7/metasploit-framework/issues/7673">bypassuac_injection needs updating due to changes in Windows 10
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2016-12-07T23:45:07+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              OJ
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7671">
+                <span class="fa-fw fa fa-github">LoginScanner API should handle Metasploit::Model::Login::Status::LOCKED_OUT and Metasploit::Model::Login::Status::DISABLED</span>
+              </a>
+              <a title="LoginScanner API should handle Metasploit::Model::Login::Status::LOCKED_OUT and Metasploit::Model::Login::Status::DISABLED" href="https://github.com/rapid7/metasploit-framework/issues/7671">LoginScanner API should handle Metasploit::Model::Login::Status::LOCKED_OUT and Metasploit::Model::Login::Status::DISABLED
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2016-12-07T21:49:06+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              wchen-r7
+            </td>
+          </tr>
           <tr>
             <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7650">
