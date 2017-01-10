@@ -67,7 +67,7 @@
   </li>
   <li role="presentation">
     <a href="bugs.html" >Open Bugs
-      <span class="badge">4 since last week</span>
+      <span class="badge">2 since last week</span>
     </a>
   </li>
           </li>
@@ -119,10 +119,10 @@
                 },
 
                 series: [
-				{ name: "Total Opened Bugs per Quarter", data: [[1412035200000, 41], [1419984000000, 136], [1419984000000, 136], [1427760000000, 109], [1435622400000, 87], [1443571200000, 59], [1451520000000, 56], [1459382400000, 37], [1467244800000, 50], [1475193600000, 42], [1483142400000, 54]] },
-				{ name: "Total Closed Bugs per Quarter", data: [[1412035200000, 3], [1419984000000, 100], [1419984000000, 100], [1427760000000, 84], [1435622400000, 97], [1443571200000, 46], [1451520000000, 39], [1459382400000, 25], [1467244800000, 39], [1475193600000, 33], [1483142400000, 61]] },
-				{ name: "Rapid7 Opened Bugs per Quarter", data: [[1412035200000, 27], [1419984000000, 67], [1419984000000, 67], [1427760000000, 42], [1435622400000, 28], [1443571200000, 14], [1451520000000, 31], [1459382400000, 12], [1467244800000, 21], [1475193600000, 12], [1483142400000, 6]] },
-				{ name: "Rapid7 Closed Bugs per Quarter", data: [[1404480133000, 2], [1412256133000, 48], [1420032133000, 48], [1427808133000, 35], [1435584133000, 37], [1443360133000, 11], [1451136133000, 16], [1458912133000, 12], [1466688133000, 16], [1474464133000, 12], [1482240133000, 17]] },
+				{ name: "Total Opened Bugs per Quarter", data: [[1412035200000, 41], [1419984000000, 136], [1427760000000, 109], [1435622400000, 87], [1435622400000, 87], [1443571200000, 59], [1451520000000, 56], [1459382400000, 37], [1467244800000, 50], [1475193600000, 42], [1483142400000, 54]] },
+				{ name: "Total Closed Bugs per Quarter", data: [[1412035200000, 3], [1419984000000, 100], [1427760000000, 84], [1435622400000, 97], [1435622400000, 97], [1443571200000, 46], [1451520000000, 39], [1459382400000, 25], [1467244800000, 39], [1475193600000, 33], [1483142400000, 61]] },
+				{ name: "Rapid7 Opened Bugs per Quarter", data: [[1412035200000, 27], [1419984000000, 67], [1427760000000, 42], [1435622400000, 28], [1435622400000, 28], [1443571200000, 14], [1451520000000, 31], [1459382400000, 12], [1467244800000, 21], [1475193600000, 12], [1483142400000, 6]] },
+				{ name: "Rapid7 Closed Bugs per Quarter", data: [[1404566526000, 2], [1412342526000, 48], [1420118526000, 35], [1427894526000, 37], [1435670526000, 37], [1443446526000, 11], [1451222526000, 16], [1458998526000, 12], [1466774526000, 16], [1474550526000, 12], [1482326526000, 17]] },
 				]
             });
         });
@@ -134,9 +134,9 @@
     </div>
     <table class="table table-striped">
       <h2>Top committers this last week</h2>
-      <tr><td>Brent Cook (77)</td><td>William Vu (49)</td><td>David Maloney (23)</td><td>Metasploit (20)</td><td>OJ (19)</td><td>Tim (15)</td><td>p3nt4 (12)</td><td>wchen-r7 (9)</td><td>h00die (7)</td><td>Spencer McIntyre (7)</td></tr>
-      <tr><td>Adam Cammack (7)</td><td>Jon Hart (6)</td><td>James Lee (5)</td><td>Luis Fontes (5)</td><td>Carter (5)</td><td>dmohanty-r7 (4)</td><td>William Webb (3)</td><td>bwatters_r7 (3)</td><td>jinq102030 (2)</td><td>joernchen of Phenoelit (2)</td></tr>
-      <tr><td>HD Moore (1)</td><td>RageLtMan (1)</td><td>egypt (1)</td><td>cypher (1)</td><td>Brendan (1)</td><td>Justin Angel (1)</td><td>Jin Qian (1)</td><td>Sonny Gonzalez (1)</td><td>PartyImp (1)</td><td>Louis Nacfaire (1)</td></tr>
+      <tr><td>Brent Cook (77)</td><td>William Vu (49)</td><td>David Maloney (24)</td><td>Metasploit (20)</td><td>OJ (19)</td><td>Tim (15)</td><td>p3nt4 (12)</td><td>wchen-r7 (10)</td><td>Adam Cammack (7)</td><td>Jon Hart (6)</td></tr>
+      <tr><td>h00die (6)</td><td>James Lee (5)</td><td>Luis Fontes (5)</td><td>Spencer McIntyre (5)</td><td>Carter (5)</td><td>dmohanty-r7 (4)</td><td>William Webb (3)</td><td>bwatters_r7 (3)</td><td>jinq102030 (2)</td><td>joernchen of Phenoelit (2)</td></tr>
+      <tr><td>HD Moore (1)</td><td>egypt (1)</td><td>cypher (1)</td><td>Brendan (1)</td><td>Justin Angel (1)</td><td>Jin Qian (1)</td><td>Sonny Gonzalez (1)</td><td>PartyImp (1)</td><td>Louis Nacfaire (1)</td></tr>
     </table>
     <h2>Top items this last week</h2>
     
@@ -153,6 +153,60 @@
       <div class="table-responsive">
       <table class="table">
     
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7805">
+                <span class="fa-fw fa fa-github">Add CVE-2016-6435 - Cisco Firepower Management Console Dir Traversal</span>
+              </a>
+              <a title="Add CVE-2016-6435 - Cisco Firepower Management Console Dir Traversal" href="https://github.com/rapid7/metasploit-framework/issues/7805">Add CVE-2016-6435 - Cisco Firepower Management Console Dir Traversal
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2017-01-09T20:47:32+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              wchen-r7
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7804">
+                <span class="fa-fw fa fa-github">Cmd creds changes</span>
+              </a>
+              <a title="Cmd creds changes" href="https://github.com/rapid7/metasploit-framework/issues/7804">Cmd creds changes
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2017-01-09T20:21:31+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              darkbushido
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7803">
+                <span class="fa-fw fa fa-github">Add CVE-2016-6433 - Post-auth Cisco Firepower Management Console RCE</span>
+              </a>
+              <a title="Add CVE-2016-6433 - Post-auth Cisco Firepower Management Console RCE" href="https://github.com/rapid7/metasploit-framework/issues/7803">Add CVE-2016-6433 - Post-auth Cisco Firepower Management Console RCE
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2017-01-09T17:55:22+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              wchen-r7
+            </td>
+          </tr>
           <tr>
             <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7797">
@@ -299,24 +353,6 @@
           </tr>
           <tr>
             <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7783">
-                <span class="fa-fw fa fa-github">Fix #7743, nil @cnonce in rex/proto/http/client.rb</span>
-              </a>
-              <a title="Fix #7743, nil @cnonce in rex/proto/http/client.rb" href="https://github.com/rapid7/metasploit-framework/issues/7783">Fix #7743, nil @cnonce in rex/proto/http/client.rb
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2017-01-04T17:56:24+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              wchen-r7
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7781">
                 <span class="fa-fw fa fa-github">IBM Websphere Java Deserialization (RCE)</span>
               </a>
@@ -331,24 +367,6 @@
 
             <td class="resource_author" nowrap>
               wizard32
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7778">
-                <span class="fa-fw fa fa-github">Add exploits for NETGEAR WNR2000v5 router</span>
-              </a>
-              <a title="Add exploits for NETGEAR WNR2000v5 router" href="https://github.com/rapid7/metasploit-framework/issues/7778">Add exploits for NETGEAR WNR2000v5 router
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2017-01-02T17:31:44+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              pedrib
             </td>
           </tr>
           <tr>
@@ -425,6 +443,24 @@
           </tr>
           <tr>
             <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7783">
+                <span class="fa-fw fa fa-github">Fix #7743, nil @cnonce in rex/proto/http/client.rb</span>
+              </a>
+              <a title="Fix #7743, nil @cnonce in rex/proto/http/client.rb" href="https://github.com/rapid7/metasploit-framework/issues/7783">Fix #7743, nil @cnonce in rex/proto/http/client.rb
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2017-01-04T17:56:24+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              wchen-r7
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7782">
                 <span class="fa-fw fa fa-github">Update themoon exploit to use wget command stager</span>
               </a>
@@ -443,24 +479,6 @@
           </tr>
           <tr>
             <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7776">
-                <span class="fa-fw fa fa-github">remove logging of expected exceptions in connection_established? method</span>
-              </a>
-              <a title="remove logging of expected exceptions in connection_established? method" href="https://github.com/rapid7/metasploit-framework/issues/7776">remove logging of expected exceptions in connection_established? method
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2017-01-02T14:30:13+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              busterb
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/metasploit-payloads/issues/162">
                 <span class="fa-fw fa fa-github">add android_wakelock to Android meterpreter</span>
               </a>
@@ -475,24 +493,6 @@
 
             <td class="resource_author" nowrap>
               timwr
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-payloads/issues/161">
-                <span class="fa-fw fa fa-github">Use the correct spelling of ACCESS_COARSE_LOCATION</span>
-              </a>
-              <a title="Use the correct spelling of ACCESS_COARSE_LOCATION" href="https://github.com/rapid7/metasploit-payloads/issues/161">Use the correct spelling of ACCESS_COARSE_LOCATION
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2017-01-03T04:06:43+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              bcook-r7
             </td>
           </tr>
           <tr>
@@ -589,42 +589,6 @@
 
             <td class="resource_author" nowrap>
               wchen-r7
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7779">
-                <span class="fa-fw fa fa-github">multi/meterpreter/reverse_https not functioning with web_delivery</span>
-              </a>
-              <a title="multi/meterpreter/reverse_https not functioning with web_delivery" href="https://github.com/rapid7/metasploit-framework/issues/7779">multi/meterpreter/reverse_https not functioning with web_delivery
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2017-01-02T17:52:05+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              mubix
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/7780">
-                <span class="fa-fw fa fa-github">Wrong requested Android permission</span>
-              </a>
-              <a title="Wrong requested Android permission" href="https://github.com/rapid7/metasploit-framework/issues/7780">Wrong requested Android permission
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2017-01-03T01:16:53+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              PsychoBit
             </td>
           </tr></table></div></div></div></div>
   </body>
