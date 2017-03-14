@@ -57,7 +57,7 @@
   </li>
   <li role="presentation">
     <a href="pull_requests.html" >Open Pull Requests
-      <span class="badge">27 since last week</span>
+      <span class="badge">25 since last week</span>
     </a>
   </li>
   <li role="presentation">
@@ -67,7 +67,7 @@
   </li>
   <li role="presentation">
     <a href="bugs.html" >Open Bugs
-      <span class="badge">2 since last week</span>
+      <span class="badge">1 since last week</span>
     </a>
   </li>
           </li>
@@ -119,10 +119,10 @@
                 },
 
                 series: [
-                  { name: "Total Opened Features and Enhancements per Quarter", data: [[1412146800000, 30], [1420099200000, 46], [1427871600000, 35], [1435734000000, 17], [1443682800000, 29], [1451635200000, 33], [1459494000000, 24], [1467356400000, 24], [1475305200000, 14], [1483257600000, 23], [1489388400000, 11]] },
-                  { name: "Total Closed Features and Enhancements per Quarter", data: [[1412146800000, 1], [1420099200000, 15], [1427871600000, 22], [1435734000000, 13], [1443682800000, 24], [1451635200000, 15], [1459494000000, 13], [1467356400000, 14], [1475305200000, 13], [1483257600000, 11], [1489388400000, 15]] },
-                  { name: "Rapid7 Opened Features and Enhancements per Quarter", data: [[1412146800000, 22], [1420099200000, 26], [1427871600000, 17], [1435734000000, 5], [1443682800000, 5], [1451635200000, 15], [1459494000000, 9], [1467356400000, 7], [1475305200000, 3], [1483257600000, 3], [1489388400000, 5]] },
-                  { name: "Rapid7 Closed Features and Enhancements per Quarter", data: [[1420099200000, 8], [1427871600000, 15], [1435734000000, 7], [1443682800000, 10], [1451635200000, 9], [1459494000000, 7], [1467356400000, 7], [1475305200000, 5], [1483257600000, 3], [1489388400000, 5]] },
+                  { name: "Total Opened Features and Enhancements per Quarter", data: [[1412146800000, 30], [1420099200000, 46], [1427871600000, 35], [1435734000000, 17], [1443682800000, 29], [1451635200000, 33], [1459494000000, 24], [1467356400000, 24], [1475305200000, 14], [1483257600000, 23], [1489474800000, 11]] },
+                  { name: "Total Closed Features and Enhancements per Quarter", data: [[1412146800000, 1], [1420099200000, 15], [1427871600000, 22], [1435734000000, 13], [1443682800000, 24], [1451635200000, 15], [1459494000000, 13], [1467356400000, 14], [1475305200000, 13], [1483257600000, 11], [1489474800000, 15]] },
+                  { name: "Rapid7 Opened Features and Enhancements per Quarter", data: [[1412146800000, 22], [1420099200000, 26], [1427871600000, 17], [1435734000000, 5], [1443682800000, 5], [1451635200000, 15], [1459494000000, 9], [1467356400000, 7], [1475305200000, 3], [1483257600000, 3], [1489474800000, 5]] },
+                  { name: "Rapid7 Closed Features and Enhancements per Quarter", data: [[1420099200000, 8], [1427871600000, 15], [1435734000000, 7], [1443682800000, 10], [1451635200000, 9], [1459494000000, 7], [1467356400000, 7], [1475305200000, 5], [1483257600000, 3], [1489474800000, 5]] },
                 ]
             });
         });
@@ -135,8 +135,8 @@
     <table class="table table-striped">
       <h2>Top committers this last month</h2>
       <tr>
-<td>Brent Cook (65)</td><td>David Maloney (33)</td><td>wchen-r7 (29)</td><td>h00die (26)</td><td>Jeffrey Martin (21)</td><td>William Vu (19)</td><td>Carter (14)</td><td>bwatters-r7 (13)</td><td>Metasploit (13)</td><td>Spencer McIntyre (10)</td></tr>
-<tr><td>Jin Qian (9)</td><td>Pearce Barry (9)</td><td>William Webb (7)</td><td>Tim (6)</td><td>Rich Whitcroft (5)</td><td>James Barnett (5)</td><td>Brendan Coles (5)</td><td>OJ (3)</td><td>dmohanty-r7 (3)</td><td>dmaloney-r7 (2)</td></tr>
+<td>Brent Cook (68)</td><td>David Maloney (33)</td><td>wchen-r7 (29)</td><td>h00die (26)</td><td>Jeffrey Martin (23)</td><td>William Vu (19)</td><td>Carter (14)</td><td>bwatters-r7 (13)</td><td>Metasploit (13)</td><td>Spencer McIntyre (10)</td></tr>
+<tr><td>Pearce Barry (9)</td><td>Jin Qian (8)</td><td>William Webb (7)</td><td>Tim (6)</td><td>Rich Whitcroft (5)</td><td>James Barnett (5)</td><td>Brendan Coles (5)</td><td>OJ (3)</td><td>dmohanty-r7 (3)</td><td>dmaloney-r7 (2)</td></tr>
 <tr><td>jvoisin (2)</td><td>Jeff Tang (2)</td><td>Rok Ajdnik (2)</td><td>bwatters (1)</td><td>Christian Mehlmauer (1)</td><td>aushack (1)</td><td>David Manouchehri (1)</td><td>Jan-Erik Rediger (1)</td><td>bigendiansmalls (1)</td><td>defektive (1)</td></tr>
 <tr></tr>
 
@@ -156,6 +156,78 @@
       <div class="table-responsive">
       <table class="table">
     
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/8103">
+                <span class="fa-fw fa fa-github">Add CVE-2017-5638, Struts2 Content-Type OGNL injection</span>
+              </a>
+              <a title="Add CVE-2017-5638, Struts2 Content-Type OGNL injection" href="https://github.com/rapid7/metasploit-framework/issues/8103">Add CVE-2017-5638, Struts2 Content-Type OGNL injection
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2017-03-14T01:29:45+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              egypt
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/8102">
+                <span class="fa-fw fa fa-github">Resolve #8026, Add a plugin to notify new sessions via SMS</span>
+              </a>
+              <a title="Resolve #8026, Add a plugin to notify new sessions via SMS" href="https://github.com/rapid7/metasploit-framework/issues/8102">Resolve #8026, Add a plugin to notify new sessions via SMS
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2017-03-13T21:36:53+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              wchen-r7
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/8101">
+                <span class="fa-fw fa fa-github">temporarily fix bundles on aarch64 platforms</span>
+              </a>
+              <a title="temporarily fix bundles on aarch64 platforms" href="https://github.com/rapid7/metasploit-framework/issues/8101">temporarily fix bundles on aarch64 platforms
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2017-03-13T18:18:39+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              busterb
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/8100">
+                <span class="fa-fw fa fa-github">Msfcrawler improvement (and bug fixes)</span>
+              </a>
+              <a title="Msfcrawler improvement (and bug fixes)" href="https://github.com/rapid7/metasploit-framework/issues/8100">Msfcrawler improvement (and bug fixes)
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2017-03-13T16:56:08+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              J0hn-
+            </td>
+          </tr>
           <tr>
             <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/8099">
@@ -266,42 +338,6 @@
           </tr>
           <tr>
             <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/8074">
-                <span class="fa-fw fa fa-github">Apache Struts2 S2-045 Exploit (CVE-2017-5638)</span>
-              </a>
-              <a title="Apache Struts2 S2-045 Exploit (CVE-2017-5638)" href="https://github.com/rapid7/metasploit-framework/issues/8074">Apache Struts2 S2-045 Exploit (CVE-2017-5638)
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2017-03-08T06:33:07+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              Chorder
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/8072">
-                <span class="fa-fw fa fa-github">[add] CVE-2017-5638 - Apache Struts2 S2-045</span>
-              </a>
-              <a title="[add] CVE-2017-5638 - Apache Struts2 S2-045" href="https://github.com/rapid7/metasploit-framework/issues/8072">[add] CVE-2017-5638 - Apache Struts2 S2-045
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2017-03-08T02:22:43+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              nixawk
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/8071">
                 <span class="fa-fw fa fa-github">Add API to send an MMS message to mobile devices</span>
               </a>
@@ -334,24 +370,6 @@
 
             <td class="resource_author" nowrap>
               itsmeroy2012
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/8065">
-                <span class="fa-fw fa fa-github">Zigbee Hardware Bridge Extension</span>
-              </a>
-              <a title="Zigbee Hardware Bridge Extension" href="https://github.com/rapid7/metasploit-framework/issues/8065">Zigbee Hardware Bridge Extension
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2017-03-07T07:04:50+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              zombieCraig
             </td>
           </tr>
           <tr>
@@ -446,6 +464,24 @@
           </tr>
           <tr>
             <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/8074">
+                <span class="fa-fw fa fa-github">Apache Struts2 S2-045 Exploit (CVE-2017-5638)</span>
+              </a>
+              <a title="Apache Struts2 S2-045 Exploit (CVE-2017-5638)" href="https://github.com/rapid7/metasploit-framework/issues/8074">Apache Struts2 S2-045 Exploit (CVE-2017-5638)
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2017-03-08T06:33:07+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              Chorder
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/8073">
                 <span class="fa-fw fa fa-github">Apache Struts2 S2-045 RCE(CVE-2017-5638)</span>
               </a>
@@ -460,6 +496,24 @@
 
             <td class="resource_author" nowrap>
               Chorder
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/8072">
+                <span class="fa-fw fa fa-github">[add] CVE-2017-5638 - Apache Struts2 S2-045</span>
+              </a>
+              <a title="[add] CVE-2017-5638 - Apache Struts2 S2-045" href="https://github.com/rapid7/metasploit-framework/issues/8072">[add] CVE-2017-5638 - Apache Struts2 S2-045
+                <span class="fa-fw fa fa-info-circle"></span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2017-03-08T02:22:43+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              nixawk
             </td>
           </tr>
           <tr>
@@ -500,38 +554,20 @@
           </tr>
           <tr>
             <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/8066">
-                <span class="fa-fw fa fa-github">Issue #7188 resolved along with checking for all loopback addresses.</span>
+              <a target="_blank" href="https://github.com/rapid7/metasploit-omnibus/issues/47">
+                <span class="fa-fw fa fa-github">update images for cached framework needed for arm</span>
               </a>
-              <a title="Issue #7188 resolved along with checking for all loopback addresses." href="https://github.com/rapid7/metasploit-framework/issues/8066">Issue #7188 resolved along with checking for all loopback addresses.
+              <a title="update images for cached framework needed for arm" href="https://github.com/rapid7/metasploit-omnibus/issues/47">update images for cached framework needed for arm
                 <span class="fa-fw fa fa-info-circle"></span>
               </a>
             </td>
 
             <td class="resource_date" nowrap>
-              <em>2017-03-07T12:15:47+00:00</em>
+              <em>2017-03-13T20:27:55+00:00</em>
             </td>
 
             <td class="resource_author" nowrap>
-              itsmeroy2012
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/8063">
-                <span class="fa-fw fa fa-github">Issue #7188 resolved</span>
-              </a>
-              <a title="Issue #7188 resolved" href="https://github.com/rapid7/metasploit-framework/issues/8063">Issue #7188 resolved
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2017-03-06T20:36:03+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              itsmeroy2012
+              jmartin-r7
             </td>
           </tr>
           <tr>
@@ -569,78 +605,6 @@
             <td class="resource_author" nowrap>
               jikuja
             </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploitable3/issues/94">
-                <span class="fa-fw fa fa-github">Enhanced VBox version check error msgs for PS.</span>
-              </a>
-              <a title="Enhanced VBox version check error msgs for PS." href="https://github.com/rapid7/metasploitable3/issues/94">Enhanced VBox version check error msgs for PS.
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2017-03-06T14:46:27+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              pbarry-r7
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-aggregator/issues/5">
-                <span class="fa-fw fa fa-github">Readme updates</span>
-              </a>
-              <a title="Readme updates" href="https://github.com/rapid7/metasploit-aggregator/issues/5">Readme updates
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2017-03-06T20:05:59+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              jmartin-r7
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-vulnerability-emulator/issues/2">
-                <span class="fa-fw fa fa-github">Update README.md</span>
-              </a>
-              <a title="Update README.md" href="https://github.com/rapid7/metasploit-vulnerability-emulator/issues/2">Update README.md
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2017-03-06T20:12:26+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              iliaselmatani
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-vulnerability-emulator/issues/1">
-                <span class="fa-fw fa fa-github">Create a docker container for this environment</span>
-              </a>
-              <a title="Create a docker container for this environment" href="https://github.com/rapid7/metasploit-vulnerability-emulator/issues/1">Create a docker container for this environment
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2017-03-06T15:45:36+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              opsxcq
-            </td>
           </tr></table></div></div></div>
     <div class="panel panel-primary">
       <div class="panel-heading" data-toggle="collapse"
@@ -666,24 +630,6 @@
       <div class="table-responsive">
       <table class="table">
     
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/8061">
-                <span class="fa-fw fa fa-github">Stacktrace for telnet_version</span>
-              </a>
-              <a title="Stacktrace for telnet_version" href="https://github.com/rapid7/metasploit-framework/issues/8061">Stacktrace for telnet_version
-                <span class="fa-fw fa fa-info-circle"></span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2017-03-06T17:09:12+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              leebaird
-            </td>
-          </tr>
           <tr>
             <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/8092">
