@@ -119,10 +119,10 @@
                 },
 
                 series: [
-                  { name: "Total Opened Bugs per Quarter", data: [[1412146800000, 44], [1420099200000, 135], [1427871600000, 110], [1435734000000, 89], [1443682800000, 62], [1451635200000, 57], [1459494000000, 38], [1467356400000, 50], [1475305200000, 46], [1483257600000, 62], [1491030000000, 35], [1498892400000, 42], [1506841200000, 38], [1512288000000, 15]] },
-                  { name: "Total Closed Bugs per Quarter", data: [[1412146800000, 7], [1420099200000, 101], [1427871600000, 85], [1435734000000, 97], [1443682800000, 46], [1451635200000, 39], [1459494000000, 25], [1467356400000, 41], [1475305200000, 34], [1483257600000, 63], [1491030000000, 30], [1498892400000, 22], [1506841200000, 36], [1512288000000, 14]] },
-                  { name: "Rapid7 Opened Bugs per Quarter", data: [[1412146800000, 27], [1420099200000, 66], [1427871600000, 43], [1435734000000, 29], [1443682800000, 13], [1451635200000, 31], [1459494000000, 12], [1467356400000, 21], [1475305200000, 12], [1483257600000, 6], [1491030000000, 5], [1506841200000, 5], [1512288000000, 1]] },
-                  { name: "Rapid7 Closed Bugs per Quarter", data: [[1412146800000, 4], [1420099200000, 48], [1427871600000, 36], [1435734000000, 37], [1443682800000, 11], [1451635200000, 15], [1459494000000, 12], [1467356400000, 17], [1475305200000, 12], [1483257600000, 18], [1491030000000, 6], [1506841200000, 3], [1512288000000, 1]] },
+                  { name: "Total Opened Bugs per Quarter", data: [[1412146800000, 44], [1420099200000, 135], [1427871600000, 110], [1435734000000, 89], [1443682800000, 62], [1451635200000, 57], [1459494000000, 38], [1467356400000, 50], [1475305200000, 46], [1483257600000, 62], [1491030000000, 35], [1498892400000, 42], [1506841200000, 38], [1512374400000, 15]] },
+                  { name: "Total Closed Bugs per Quarter", data: [[1412146800000, 7], [1420099200000, 101], [1427871600000, 85], [1435734000000, 97], [1443682800000, 46], [1451635200000, 39], [1459494000000, 25], [1467356400000, 41], [1475305200000, 34], [1483257600000, 63], [1491030000000, 30], [1498892400000, 22], [1506841200000, 36], [1512374400000, 14]] },
+                  { name: "Rapid7 Opened Bugs per Quarter", data: [[1412146800000, 27], [1420099200000, 66], [1427871600000, 43], [1435734000000, 29], [1443682800000, 13], [1451635200000, 31], [1459494000000, 12], [1467356400000, 21], [1475305200000, 12], [1483257600000, 6], [1491030000000, 5], [1506841200000, 5], [1512374400000, 1]] },
+                  { name: "Rapid7 Closed Bugs per Quarter", data: [[1412146800000, 4], [1420099200000, 48], [1427871600000, 36], [1435734000000, 37], [1443682800000, 11], [1451635200000, 15], [1459494000000, 12], [1467356400000, 17], [1475305200000, 12], [1483257600000, 18], [1491030000000, 6], [1506841200000, 3], [1512374400000, 1]] },
                 ]
             });
         });
@@ -135,8 +135,8 @@
     <table class="table table-striped">
       <h2>Top committers this last month</h2>
       <tr>
-<td>Brent Cook (73)</td><td>Christophe De La Fuente (21)</td><td>Pearce Barry (15)</td><td>Daniel Teixeira (14)</td><td>William Vu (14)</td><td>bwatters-r7 (13)</td><td>Metasploit (12)</td><td>Adam Cammack (11)</td><td>Matthew Kienow (8)</td><td>Tim W (8)</td></tr>
-<tr><td>Austin (7)</td><td>OJ (7)</td><td>Spencer McIntyre (6)</td><td>h00die (6)</td><td>Jeffrey Martin (5)</td><td>Dev Mohanty (3)</td><td>OPSXCQ (3)</td><td>David Maloney (3)</td><td>Martin Pizala (3)</td><td>Christian Mehlmauer (3)</td></tr>
+<td>Brent Cook (73)</td><td>Christophe De La Fuente (21)</td><td>Daniel Teixeira (14)</td><td>Pearce Barry (14)</td><td>William Vu (14)</td><td>bwatters-r7 (13)</td><td>Adam Cammack (11)</td><td>Metasploit (11)</td><td>Matthew Kienow (8)</td><td>Tim W (8)</td></tr>
+<tr><td>OJ (7)</td><td>Spencer McIntyre (6)</td><td>h00die (6)</td><td>Jeffrey Martin (5)</td><td>Austin (4)</td><td>Dev Mohanty (3)</td><td>David Maloney (3)</td><td>Martin Pizala (3)</td><td>Christian Mehlmauer (3)</td><td>OPSXCQ (2)</td></tr>
 <tr><td>jinq102030 (2)</td><td>scriptjunkie (2)</td><td>RootUp (2)</td><td>Maurice Popp (2)</td><td>Tim (2)</td><td>William Webb (2)</td><td>Jon Hart (2)</td><td>Chandrapal (1)</td><td>harnnless (1)</td><td>Patrick Webster (1)</td></tr>
 <tr><td>Steven Patterson (1)</td><td>attackdebris (1)</td><td>vipzen (1)</td></tr>
 
@@ -458,6 +458,21 @@
           </tr>
           <tr>
             <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-omnibus/issues/59">
+                <span class="fa-fw fa fa-github">only set db_args with msfconsole</span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2017-12-04T04:36:05+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              busterb
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/mettle/issues/99">
                 <span class="fa-fw fa fa-github">force BPF for darwin targets</span>
               </a>
@@ -510,21 +525,6 @@
 
             <td class="resource_date" nowrap>
               <em>2017-11-27T20:53:06+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              busterb
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/mettle/issues/98">
-                <span class="fa-fw fa fa-github">move dependencies into this repo</span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2017-11-27T09:24:43+00:00</em>
             </td>
 
             <td class="resource_author" nowrap>
