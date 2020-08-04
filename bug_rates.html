@@ -119,9 +119,9 @@
                 },
 
                 series: [
-                  { name: "Total Opened Bugs per Quarter", data: [[1475298000000, 46], [1483250400000, 62], [1491022800000, 35], [1498885200000, 45], [1506834000000, 48], [1514786400000, 31], [1522558800000, 52], [1530421200000, 64], [1538370000000, 34], [1546322400000, 31], [1554094800000, 49], [1561957200000, 44], [1569906000000, 36], [1577858400000, 30], [1585717200000, 37], [1593579600000, 30], [1596430800000, 19]] },
-                  { name: "Total Closed Bugs per Quarter", data: [[1475298000000, 34], [1483250400000, 63], [1491022800000, 30], [1498885200000, 21], [1506834000000, 36], [1514786400000, 15], [1522558800000, 17], [1530421200000, 20], [1538370000000, 60], [1546322400000, 23], [1554094800000, 33], [1561957200000, 28], [1569906000000, 31], [1577858400000, 23], [1585717200000, 61], [1593579600000, 38], [1596430800000, 8]] },
-                  { name: "Rapid7 Opened Bugs per Quarter", data: [[1475298000000, 12], [1483250400000, 6], [1491022800000, 5], [1506834000000, 5], [1514786400000, 1], [1522558800000, 2], [1530421200000, 13], [1538370000000, 10], [1546322400000, 3], [1554094800000, 4], [1561957200000, 12], [1569906000000, 3], [1577858400000, 7], [1585717200000, 4], [1593579600000, 3]] },
+                  { name: "Total Opened Bugs per Quarter", data: [[1475298000000, 46], [1483250400000, 62], [1491022800000, 35], [1498885200000, 45], [1506834000000, 48], [1514786400000, 31], [1522558800000, 52], [1530421200000, 64], [1538370000000, 34], [1546322400000, 31], [1554094800000, 49], [1561957200000, 44], [1569906000000, 36], [1577858400000, 30], [1585717200000, 37], [1593579600000, 30], [1596517200000, 21]] },
+                  { name: "Total Closed Bugs per Quarter", data: [[1475298000000, 34], [1483250400000, 63], [1491022800000, 30], [1498885200000, 21], [1506834000000, 36], [1514786400000, 15], [1522558800000, 17], [1530421200000, 20], [1538370000000, 60], [1546322400000, 23], [1554094800000, 33], [1561957200000, 28], [1569906000000, 31], [1577858400000, 23], [1585717200000, 61], [1593579600000, 38], [1596517200000, 8]] },
+                  { name: "Rapid7 Opened Bugs per Quarter", data: [[1475298000000, 12], [1483250400000, 6], [1491022800000, 5], [1506834000000, 5], [1514786400000, 1], [1522558800000, 2], [1530421200000, 13], [1538370000000, 10], [1546322400000, 3], [1554094800000, 4], [1561957200000, 12], [1569906000000, 3], [1577858400000, 7], [1585717200000, 4], [1593579600000, 3], [1596517200000, 1]] },
                   { name: "Rapid7 Closed Bugs per Quarter", data: [[1475298000000, 12], [1483250400000, 18], [1491022800000, 6], [1506834000000, 3], [1514786400000, 1], [1522558800000, 2], [1530421200000, 2], [1538370000000, 10], [1546322400000, 4], [1554094800000, 2], [1561957200000, 9], [1569906000000, 5], [1577858400000, 4], [1585717200000, 10], [1593579600000, 4]] },
                 ]
             });
@@ -135,8 +135,8 @@
     <table class="table table-striped">
       <h2>Top committers this last month</h2>
       <tr>
-<td>William Vu (40)</td><td>Metasploit (40)</td><td>Spencer McIntyre (30)</td><td>Brendan Coles (18)</td><td>Shelby Pace (15)</td><td>Jeffrey Martin (13)</td><td>kalba-security (12)</td><td>gwillcox-r7 (11)</td><td>h00die (10)</td><td>Patrick (7)</td></tr>
-<tr><td>adfoster-r7 (7)</td><td>Alan Foster (6)</td><td>Brent Cook (6)</td><td>Ege Balcı (6)</td><td>Ron Wills (5)</td><td>wetw0rk (5)</td><td>Hynek Petrak (4)</td><td>0x44434241 (2)</td><td>bwatters (2)</td><td>Erik Wynter (2)</td></tr>
+<td>William Vu (40)</td><td>Metasploit (40)</td><td>Spencer McIntyre (30)</td><td>gwillcox-r7 (21)</td><td>Brendan Coles (17)</td><td>Shelby Pace (15)</td><td>Jeffrey Martin (13)</td><td>kalba-security (12)</td><td>h00die (10)</td><td>Patrick (7)</td></tr>
+<tr><td>adfoster-r7 (7)</td><td>Brent Cook (7)</td><td>Alan Foster (6)</td><td>Ege Balcı (6)</td><td>Ron Wills (5)</td><td>wetw0rk (5)</td><td>Hynek Petrak (4)</td><td>0x44434241 (2)</td><td>bwatters (2)</td><td>Erik Wynter (2)</td></tr>
 <tr><td>Tim W (2)</td><td>Niboucha Redouane (2)</td><td>Joseph Gibson (1)</td><td>OJ (1)</td><td>Stefan Pietsch (1)</td><td>Tod Beardsley (1)</td><td>dwelch-r7 (1)</td></tr>
 
     </table>
@@ -157,17 +157,32 @@
     
           <tr>
             <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/13929">
-                <span class="fa-fw fa fa-github">ie4 mk dos (CVE-1999-0331)</span>
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/13936">
+                <span class="fa-fw fa fa-github">Fix up ExploitError Module Inside exceptions.rb to Properly Propagate Errors to Users</span>
               </a>
             </td>
 
             <td class="resource_date" nowrap>
-              <em>2020-08-01T11:36:24+00:00</em>
+              <em>2020-08-03T22:18:44+00:00</em>
             </td>
 
             <td class="resource_author" nowrap>
-              h00die
+              gwillcox-r7
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/13935">
+                <span class="fa-fw fa fa-github">Merge Preliminary Version 6 Changes In To Master</span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2020-08-03T17:40:03+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              smcintyre-r7
             </td>
           </tr>
           <tr>
@@ -187,17 +202,17 @@
           </tr>
           <tr>
             <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/13913">
-                <span class="fa-fw fa fa-github">[GSoC] Specs for the SQLi library</span>
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/13929">
+                <span class="fa-fw fa fa-github">ie4 mk dos (CVE-1999-0331)</span>
               </a>
             </td>
 
             <td class="resource_date" nowrap>
-              <em>2020-07-27T15:43:53+00:00</em>
+              <em>2020-08-01T11:36:24+00:00</em>
             </td>
 
             <td class="resource_author" nowrap>
-              red0xff
+              h00die
             </td>
           </tr>
           <tr>
@@ -262,21 +277,6 @@
           </tr>
           <tr>
             <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/13914">
-                <span class="fa-fw fa fa-github">move config_changes on plex module</span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2020-07-27T19:36:52+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              h00die
-            </td>
-          </tr>
-          <tr>
-            <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/metasploit-payloads/issues/426">
                 <span class="fa-fw fa fa-github">log error to base stream</span>
               </a>
@@ -314,21 +314,6 @@
       <div class="table-responsive">
       <table class="table">
     
-          <tr>
-            <td class="resource_url">
-              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/13933">
-                <span class="fa-fw fa fa-github">Metasploit bcrypt Issue (Windows)</span>
-              </a>
-            </td>
-
-            <td class="resource_date" nowrap>
-              <em>2020-08-03T04:35:04+00:00</em>
-            </td>
-
-            <td class="resource_author" nowrap>
-              KarmicElk
-            </td>
-          </tr>
           <tr>
             <td class="resource_url">
               <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/13932">
@@ -432,6 +417,21 @@
 
             <td class="resource_author" nowrap>
               ilyapashuk
+            </td>
+          </tr>
+          <tr>
+            <td class="resource_url">
+              <a target="_blank" href="https://github.com/rapid7/metasploit-framework/issues/13933">
+                <span class="fa-fw fa fa-github">Metasploit bcrypt Issue (Windows)</span>
+              </a>
+            </td>
+
+            <td class="resource_date" nowrap>
+              <em>2020-08-03T04:35:04+00:00</em>
+            </td>
+
+            <td class="resource_author" nowrap>
+              KarmicElk
             </td>
           </tr>
           <tr>
