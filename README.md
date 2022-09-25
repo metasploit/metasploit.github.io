@@ -9,3 +9,5 @@ Unlike the rest of the Metasploit GitHub organization, this material ought to be
 
 - [ ] Implement SSL on http://resources.metasploit.com because cleartext
   is lame.
+free installer create app releasing on broswers ios 15.7 (IpadOs)
+./msfinstall clone for testing pentesting and deploy testing formnow....[log-83D18C.txt](https://github.com/metasploit/metasploit.github.io/files/9641592/log-83D18C.txt)
